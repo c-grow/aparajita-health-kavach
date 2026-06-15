@@ -197,6 +197,7 @@ include 'includes/header.php';
           </div>
         </div>
 
+        <div class="section-separator"></div>
       </div>
     </div>
   </section>
@@ -269,6 +270,7 @@ include 'includes/header.php';
         </a>
 
       </div>
+      <div class="section-separator"></div>
     </div>
   </section>
 
@@ -289,7 +291,13 @@ include 'includes/header.php';
             
             <div class="testi-slide">
               <div class="modern-testi-card">
-                <span class="stars">★★★★★</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
                 <p class="testi-text">The nurse assigned to my mother was incredibly caring and professional. She managed all medications and kept us updated daily. We could not have asked for better support.</p>
                 <div class="testi-author">
                   <div class="testi-avatar">RK</div>
@@ -303,7 +311,13 @@ include 'includes/header.php';
 
             <div class="testi-slide">
               <div class="modern-testi-card">
-                <span class="stars">★★★★★</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
                 <p class="testi-text">The home ICU setup was done within hours and the care team was truly like family. My father recovered comfortably at home instead of a hospital. Truly grateful.</p>
                 <div class="testi-author">
                   <div class="testi-avatar">PD</div>
@@ -317,7 +331,13 @@ include 'includes/header.php';
 
             <div class="testi-slide">
               <div class="modern-testi-card">
-                <span class="stars">★★★★★</span>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
                 <p class="testi-text">The Comfort Living facility has been a blessing for my elderly mother. She gets doctor visits, healthy food, and great company. The staff treats her like their own family.</p>
                 <div class="testi-author">
                   <div class="testi-avatar">AS</div>
@@ -340,6 +360,7 @@ include 'includes/header.php';
         <span class="dot" data-slide="1"></span>
         <span class="dot" data-slide="2"></span>
       </div>
+      <div class="section-separator"></div>
     </div>
   </section>
 
@@ -348,13 +369,13 @@ include 'includes/header.php';
     <div class="container">
       <div class="coverage-container">
         
-        <!-- Left: Stats & Headquarters Card -->
+        <!-- Left: Stats & Interactive Connection Map Card -->
         <div class="coverage-visual">
           <div class="coverage-hq">
             <div class="coverage-hq-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
               <h3>Patna Headquarters</h3>
-              <p>Centrally located to coordinate care fast</p>
+              <p>Centrally located hub coordinating rapid deployments</p>
             </div>
           </div>
           <div class="coverage-stats">
@@ -364,31 +385,75 @@ include 'includes/header.php';
             </div>
             <div class="stat-item">
               <h4>15+</h4>
-              <p>Districts Covered</p>
+              <p>Districts Serviced</p>
             </div>
           </div>
+          
+          <!-- Stylized technology connection map -->
+          <svg viewBox="0 0 500 320" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="coverage-svg-map">
+            <defs>
+              <filter id="nodeGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <path d="M 50 160 L 450 160 M 250 40 L 250 280" stroke="rgba(255,255,255,0.06)" stroke-width="1" />
+            <circle cx="250" cy="160" r="100" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+            <circle cx="250" cy="160" r="50" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1" />
+            <line x1="250" y1="160" x2="160" y2="80" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="250" y1="160" x2="340" y2="70" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="250" y1="160" x2="370" y2="180" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="250" y1="160" x2="170" y2="230" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="250" y1="160" x2="290" y2="240" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <line x1="250" y1="160" x2="120" y2="170" stroke="rgba(255,215,0,0.3)" stroke-width="1.5" stroke-dasharray="4 4" />
+            <g transform="translate(160, 80)"><circle cx="0" cy="0" r="5" fill="#ffffff" /><text x="10" y="4" font-family="'Poppins', sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Muzaffarpur</text></g>
+            <g transform="translate(340, 70)"><circle cx="0" cy="0" r="5" fill="#ffffff" /><text x="10" y="4" font-family="'Poppins', sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Hajipur</text></g>
+            <g transform="translate(370, 180)"><circle cx="0" cy="0" r="5" fill="#ffffff" /><text x="10" y="4" font-family="'Poppins', sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Begusarai</text></g>
+            <g transform="translate(290, 240)"><circle cx="0" cy="0" r="5" fill="#ffffff" /><text x="10" y="4" font-family="'Poppins', sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Gaya</text></g>
+            <g transform="translate(120, 170)"><circle cx="0" cy="0" r="5" fill="#ffffff" /><text x="-30" y="-8" font-family="'Poppins', sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Ara</text></g>
+            <g transform="translate(170, 230)"><circle cx="0" cy="0" r="5" fill="#ffffff" /><text x="-40" y="14" font-family="'Poppins', sans-serif" font-size="10" fill="rgba(255,255,255,0.75)">Chapra</text></g>
+            <g transform="translate(250, 160)">
+              <circle cx="0" cy="0" r="18" fill="rgba(255,215,0,0.15)" class="pulse-ring-slow" />
+              <circle cx="0" cy="0" r="11" fill="rgba(255,215,0,0.3)" class="pulse-ring-fast" />
+              <circle cx="0" cy="0" r="6" fill="#ffd700" filter="url(#nodeGlow)" />
+              <text x="-32" y="-18" font-family="'Poppins', sans-serif" font-size="11" font-weight="bold" fill="#ffd700">PATNA (HQ)</text>
+            </g>
+          </svg>
         </div>
         
-        <!-- Right: Modern active neighbourhood list -->
+        <!-- Right: Modern active grouped neighbourhood list -->
         <div class="coverage-showcase">
-          <h3>Serving Across Bihar</h3>
-          <div class="modern-chips-grid">
-            <div class="modern-chip hq-chip"><span class="active-dot"></span> Patna (HQ)</div>
-            <div class="modern-chip">Boring Road</div>
-            <div class="modern-chip">Danapur</div>
-            <div class="modern-chip">Khagaul</div>
-            <div class="modern-chip">Phulwari Sharif</div>
-            <div class="modern-chip">Hajipur</div>
-            <div class="modern-chip">Muzaffarpur</div>
-            <div class="modern-chip">Gaya</div>
-            <div class="modern-chip">Ara</div>
-            <div class="modern-chip">Chapra</div>
-            <div class="modern-chip">Bihar Sharif</div>
-            <div class="modern-chip">+ All Bihar</div>
+          <h3>Serving Patna &amp; Across Bihar</h3>
+          <p class="coverage-desc">We dispatch qualified care attendants, critical medical supplies, and standard nursing equipment directly to patient doorsteps in key zones.</p>
+          
+          <div class="region-group">
+            <h4><i class="fas fa-city"></i> Patna Metro Areas</h4>
+            <div class="modern-chips-grid">
+              <div class="modern-chip hq-chip"><span class="active-dot"></span> Patna (HQ)</div>
+              <div class="modern-chip">Boring Road</div>
+              <div class="modern-chip">Danapur</div>
+              <div class="modern-chip">Khagaul</div>
+              <div class="modern-chip">Phulwari Sharif</div>
+            </div>
+          </div>
+          
+          <div class="region-group" style="margin-top: 2rem;">
+            <h4><i class="fas fa-map-marked-alt"></i> Expanding District Networks</h4>
+            <div class="modern-chips-grid">
+              <div class="modern-chip">Hajipur</div>
+              <div class="modern-chip">Muzaffarpur</div>
+              <div class="modern-chip">Gaya</div>
+              <div class="modern-chip">Ara</div>
+              <div class="modern-chip">Chapra</div>
+              <div class="modern-chip">Bihar Sharif</div>
+              <div class="modern-chip">Begusarai</div>
+              <div class="modern-chip">+ All Bihar</div>
+            </div>
           </div>
         </div>
 
       </div>
+      <div class="section-separator"></div>
     </div>
   </section>
 
@@ -401,59 +466,117 @@ include 'includes/header.php';
         <p>Find answers to common questions about our home nursing, elderly care, and critical healthcare services.</p>
       </div>
 
-      <div class="faq-accordion-container">
-        
-        <details class="faq-item" open>
-          <summary class="faq-question">
-            <span>What nursing services do you provide at home?</span>
-            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
-          </summary>
-          <div class="faq-answer">
-            <p>We provide full-spectrum home healthcare including Basic Attendant Care, Standard Nursing Care (bed sores, dressings, feeding, vitals, vitals logging), Critical Nursing Care (ventilator, tracheostomy, IV line management), Home ICU setups, Physiotherapy sessions, and Lab test collections at home.</p>
-          </div>
-        </details>
+      <div class="faq-container">
+        <!-- Left: SVG Medical Help Illustration -->
+        <div class="faq-illustration">
+          <svg viewBox="0 0 500 500" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1e3c72" stop-opacity="0.05" />
+                <stop offset="100%" stop-color="#ff4757" stop-opacity="0.05" />
+              </linearGradient>
+              <linearGradient id="mainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1e3c72" />
+                <stop offset="100%" stop-color="#2a5298" />
+              </linearGradient>
+              <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff4757" />
+                <stop offset="100%" stop-color="#ff6b81" />
+              </linearGradient>
+            </defs>
+            <circle cx="250" cy="250" r="220" fill="url(#circleGrad)" />
+            <circle cx="250" cy="250" r="170" fill="none" stroke="rgba(30,60,114,0.06)" stroke-width="2" stroke-dasharray="10 10" />
+            <g transform="translate(100, 100)">
+              <circle cx="0" cy="0" r="20" fill="url(#accentGrad)" opacity="0.1" />
+              <text x="-7" y="9" font-family="'Poppins', sans-serif" font-size="26" font-weight="bold" fill="#ff4757">?</text>
+            </g>
+            <g transform="translate(380, 150)">
+              <circle cx="0" cy="0" r="28" fill="url(#mainGrad)" opacity="0.1" />
+              <text x="-9" y="11" font-family="'Poppins', sans-serif" font-size="34" font-weight="bold" fill="#1e3c72">?</text>
+            </g>
+            <g transform="translate(120, 360)">
+              <circle cx="0" cy="0" r="24" fill="url(#mainGrad)" opacity="0.08" />
+              <text x="-8" y="10" font-family="'Poppins', sans-serif" font-size="30" font-weight="bold" fill="#2a5298">?</text>
+            </g>
+            <g transform="translate(250, 260)">
+              <ellipse cx="0" cy="120" rx="90" ry="12" fill="rgba(10,25,47,0.08)" />
+              <path d="M-60,110 C-60,50 60,50 60,110 Z" fill="url(#mainGrad)" />
+              <path d="M-20,50 L0,80 L20,50 Z" fill="#ffffff" />
+              <rect x="-6" y="55" width="12" height="20" rx="2" fill="url(#accentGrad)" />
+              <line x1="0" y1="50" x2="0" y2="55" stroke="#ffffff" stroke-width="2" />
+              <circle cx="0" cy="15" r="32" fill="#fedcba" />
+              <path d="M-22,18 C-22,38 22,38 22,18" fill="none" stroke="#e2e8f0" stroke-width="4" />
+              <path d="M0,38 L0,55 C0,65 10,75 10,75" fill="none" stroke="#e2e8f0" stroke-width="4" />
+              <circle cx="10" cy="78" r="8" fill="#ff4757" />
+              <path d="M-34,12 C-34,-25 34,-25 34,12 C25,2 15,6 0,2 C-15,6 -25,2 -34,12 Z" fill="#2d3748" />
+              <circle cx="-10" cy="12" r="3" fill="#2d3748" />
+              <circle cx="10" cy="12" r="3" fill="#2d3748" />
+              <path d="M-6,22 Q0,28 6,22" fill="none" stroke="#ff4757" stroke-width="2" stroke-linecap="round" />
+              <g transform="translate(80, -40)">
+                <circle cx="0" cy="0" r="35" fill="url(#accentGrad)" filter="drop-shadow(0 10px 15px rgba(255,71,87,0.3))" />
+                <rect x="-5" y="-15" width="10" height="30" fill="#ffffff" rx="2" />
+                <rect x="-15" y="-5" width="30" height="10" fill="#ffffff" rx="2" />
+              </g>
+            </g>
+          </svg>
+        </div>
 
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Are your caregivers background checked and trained?</span>
-            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
-          </summary>
-          <div class="faq-answer">
-            <p>Yes, all our nurses and care attendants undergo strict background verification (address and identity check) and are qualified medical professionals or trained assistants. They work under constant clinical supervision to ensure maximum patient safety.</p>
-          </div>
-        </details>
+        <!-- Right: Accordion -->
+        <div class="faq-accordion-container">
+          
+          <details class="faq-item" open>
+            <summary class="faq-question">
+              <span>What nursing services do you provide at home?</span>
+              <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <p>We provide full-spectrum home healthcare including Basic Attendant Care, Standard Nursing Care (bed sores, dressings, feeding, vitals, vitals logging), Critical Nursing Care (ventilator, tracheostomy, IV line management), Home ICU setups, Physiotherapy sessions, and Lab test collections at home.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What are the booking policies and advance payments?</span>
-            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
-          </summary>
-          <div class="faq-answer">
-            <p>For home nursing services, we require an advance payment booking. The booking duration varies based on care tier (e.g., 15 days advance for Basic, 10 days for Nursing, and 8 days for Critical). All payments are non-refundable since we dedicate staff resources to your patient's schedule.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Are your caregivers background checked and trained?</span>
+              <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes, all our nurses and care attendants undergo strict background verification (address and identity check) and are qualified medical professionals or trained assistants. They work under constant clinical supervision to ensure maximum patient safety.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Can we request a change if we are not satisfied with the caregiver?</span>
-            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
-          </summary>
-          <div class="faq-answer">
-            <p>Absolutely. If you feel the assigned caregiver is not a suitable fit for your patient's specific care requirements, we will coordinate and arrange a qualified replacement caregiver within 24 hours.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What are the booking policies and advance payments?</span>
+              <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <p>For home nursing services, we require an advance payment booking. The booking duration varies based on care tier (e.g., 15 days advance for Basic, 10 days for Nursing, and 8 days for Critical). All payments are non-refundable since we dedicate staff resources to your patient's schedule.</p>
+            </div>
+          </details>
 
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>Which areas do you serve in Patna and Bihar?</span>
-            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
-          </summary>
-          <div class="faq-answer">
-            <p>We are headquartered in Patna and actively serve Boring Road, Danapur, Khagaul, Phulwari Sharif, Kankarbagh, and other key areas. Additionally, we provide critical care setup and nursing support services across major districts in Bihar including Hajipur, Muzaffarpur, Gaya, Ara, and Chapra.</p>
-          </div>
-        </details>
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can we request a change if we are not satisfied with the caregiver?</span>
+              <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. If you feel the assigned caregiver is not a suitable fit for your patient's specific care requirements, we will coordinate and arrange a qualified replacement caregiver within 24 hours.</p>
+            </div>
+          </details>
 
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Which areas do you serve in Patna and Bihar?</span>
+              <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+            </summary>
+            <div class="faq-answer">
+              <p>We are headquartered in Patna and actively serve Boring Road, Danapur, Khagaul, Phulwari Sharif, Kankarbagh, and other key areas. Additionally, we provide critical care setup and nursing support services across major districts in Bihar including Hajipur, Muzaffarpur, Gaya, Ara, and Chapra.</p>
+            </div>
+          </details>
+
+        </div>
       </div>
+      <div class="section-separator"></div>
     </div>
   </section>
 

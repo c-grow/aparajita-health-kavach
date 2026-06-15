@@ -2212,5 +2212,207 @@ nav ul li a {
     }
 }
 
+/* Section Separator Styles */
+.section-separator {
+    position: relative;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(30, 60, 114, 0.1) 50%, transparent);
+    margin: 4.5rem auto 0;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-separator::after {
+    content: "\f21e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: rgba(255, 71, 87, 0.35);
+    padding: 0 1.5rem;
+    font-size: 1.1rem;
+    position: absolute;
+}
+
+.modern-trust-section .section-separator::after { background: #f8fafc; }
+.modern-services-section .section-separator::after { background: #ffffff; }
+.modern-testi-section .section-separator::after { background: #ffffff; }
+.modern-coverage-section .section-separator::after { background: #ffffff; }
+.modern-faq-section .section-separator::after { background: #f8fafc; }
+
+/* Revamped Testimonials Style */
+.modern-testi-card {
+    background: #ffffff;
+    border-radius: 24px;
+    border: 1px solid rgba(30, 60, 114, 0.05);
+    padding: 3.5rem 3rem;
+    box-shadow: 0 15px 35px rgba(30, 60, 114, 0.03);
+    position: relative;
+    margin: 20px auto;
+    max-width: 750px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+.modern-testi-card::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    font-size: 5rem;
+    color: rgba(255, 71, 87, 0.03);
+    pointer-events: none;
+}
+
+.modern-testi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 22px 45px rgba(30, 60, 114, 0.08);
+    border-color: rgba(255, 71, 87, 0.1);
+}
+
+.modern-testi-card .stars {
+    display: flex;
+    gap: 0.25rem;
+    color: #ffb800;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.modern-testi-card .stars i {
+    color: #ffb800;
+}
+
+.modern-testi-card .testi-text {
+    font-size: 1.15rem;
+    line-height: 1.75;
+    color: #334155;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.testi-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.testi-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff4757, #ff6b81);
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 6px 15px rgba(255, 71, 87, 0.25);
+}
+
+.testi-name {
+    color: #1e3c72;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.15rem;
+}
+
+.testi-role {
+    color: #64748b;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.testi-role::before {
+    content: "📍";
+}
+
+/* FAQ Layout Grid with Illustration */
+.faq-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4.5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-illustration {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Coverage network SVG map */
+.coverage-svg-map {
+    width: 100%;
+    max-height: 250px;
+    margin-top: 1.5rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.5; }
+    50% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+.pulse-ring-slow {
+    transform-origin: center;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.pulse-ring-fast {
+    transform-origin: center;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Coverage layout styling updates */
+.coverage-desc {
+    color: #64748b;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.region-group h4 {
+    color: #1e3c72;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.region-group h4 i {
+    color: #ff4757;
+}
+
+@media (max-width: 992px) {
+    .faq-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .faq-illustration {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-question {
+        padding: 1.2rem 1.5rem;
+        font-size: 1rem;
+    }
+    .faq-answer {
+        padding: 0 1.5rem 1.5rem;
+        font-size: 0.92rem;
+    }
+}
+
 
 
