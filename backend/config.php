@@ -6,17 +6,20 @@
 // Wahan se ye values copy karo
 // =============================================
 
-// FOR LOCAL XAMPP:
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'aparajita');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-
-// FOR PRODUCTION/HOSTINGER:
-// define('DB_HOST', 'localhost');
-// define('DB_NAME', 'u123456789_aparajita');  // apna DB name daalo
-// define('DB_USER', 'u123456789_admin');       // apna DB user daalo
-// define('DB_PASS', 'YourPassword123');        // apna DB password daalo
+// FOR LOCAL XAMPP & PRODUCTION SWITCH:
+if ($_SERVER['SERVER_NAME'] === 'localhost' || $_SERVER['SERVER_ADDR'] === '127.0.0.1' || $_SERVER['SERVER_NAME'] === '192.168.1.5') {
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'aparajita');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+} else {
+    // FOR PRODUCTION / INFINITYFREE:
+    // ⚠️ NOTE: Update DB_HOST to your actual MySQL Hostname from InfinityFree panel (e.g. sql200.infinityfree.com)
+    define('DB_HOST', 'sql300.infinityfree.com'); 
+    define('DB_NAME', 'if0_42185028_aparajita');   // Change if your created database has a different name
+    define('DB_USER', 'if0_42185028');             // InfinityFree username
+    define('DB_PASS', 'Lakshmi0411');              // InfinityFree password
+}
 
 // Admin login credentials
 define('ADMIN_USERNAME', 'admin');
