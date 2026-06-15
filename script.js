@@ -45,9 +45,18 @@ function showPopupModal(title, text, type = 'success') {
         setTimeout(() => modal.remove(), 300);
     };
 
-    closeBtn.addEventListener('click', closeModal);
+    // Auto-dismiss after 5 seconds
+    const autoDismissTimer = setTimeout(closeModal, 5000);
+
+    closeBtn.addEventListener('click', () => {
+        clearTimeout(autoDismissTimer);
+        closeModal();
+    });
     modal.addEventListener('click', (e) => {
-        if (e.target === modal) closeModal();
+        if (e.target === modal) {
+            clearTimeout(autoDismissTimer);
+            closeModal();
+        }
     });
 }
 
