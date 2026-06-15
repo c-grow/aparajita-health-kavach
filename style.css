@@ -1086,3 +1086,127 @@ nav ul li a {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
+/* Cleanup styles (pricing & home-nursing) */
+.section-header-pricing {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 2.5rem;
+}
+
+.col-sl {
+    width: 80px;
+    text-align: center;
+}
+
+.col-action {
+    width: 150px;
+    text-align: center;
+}
+
+.cell-sl {
+    text-align: center;
+    font-weight: 600;
+    color: #475569;
+}
+
+.cell-amount {
+    font-weight: 700;
+    color: #1e3c72;
+}
+
+.cell-center {
+    text-align: center;
+}
+
+.badge-danger {
+    background: #fee2e2 !important;
+    color: #ef4444 !important;
+}
+
+.btn-coral-red {
+    background: #ff4757 !important;
+}
+
+.tab-detail-header {
+    margin-bottom: 1.5rem;
+}
+
+.tab-detail-title {
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+.tab-detail-icon {
+    color: #ff4757;
+}
+
+.tab-detail-desc {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.tabs-section-header {
+    margin-bottom: 1.5rem;
+    padding: 0;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.pricing-wrapper-margin {
+    margin-top: 4rem;
+}
+
+.booking-form-wrapper {
+    max-width: 650px;
+    margin: 4rem auto 1rem;
+    text-align: center;
+}
+
+.booking-card-padding {
+    padding: 2.5rem;
+    text-align: left;
+}
+
+.booking-form-title {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+}
+
+.booking-form-desc {
+    text-align: center;
+    color: #5b6472;
+    margin-bottom: 2rem;
+}
+
+.booking-submit-btn {
+    border: 0;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #ff4757;
+}
+
+.booking-message-center {
+    text-align: center;
+}
+
+.pricing-link {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.pricing-link:hover {
+    color: #ff4757;
+    text-decoration: underline;
+}
+
+

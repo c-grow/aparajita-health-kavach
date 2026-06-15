@@ -16,7 +16,7 @@ include 'includes/header.php';
     
     <!-- PRICING LIST SECTION -->
     <div class="pricing-section-wrapper" id="pricing-packages">
-      <div class="section-header" style="margin-bottom:1.5rem; padding:0; max-width: 900px; text-align:center; margin:0 auto 2.5rem;">
+      <div class="section-header section-header-pricing">
         <div class="eyebrow">Price List</div>
         <h2>Service Pricing Packages</h2>
         <p>Choose the best package for your healthcare requirements at home. No hidden charges.</p>
@@ -26,108 +26,108 @@ include 'includes/header.php';
         <table class="pricing-table">
           <thead>
             <tr>
-              <th style="width: 80px; text-align: center;">Sl. No.</th>
+              <th class="col-sl">Sl. No.</th>
               <th>Services</th>
               <th>Amount</th>
-              <th style="width: 150px; text-align: center;">Action</th>
+              <th class="col-action">Action</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">1</td>
-              <td><strong>Basic Nursing Care (8 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹400.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (8 Hours)')">Book Now</button></td>
+              <td class="cell-sl">1</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Basic Nursing Care (8 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹400.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (8 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">2</td>
-              <td><strong>Basic Nursing Care (12 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹600.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (12 Hours)')">Book Now</button></td>
+              <td class="cell-sl">2</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Basic Nursing Care (12 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹600.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (12 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">3</td>
-              <td><strong>Basic Nursing Care (24 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹1,000.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (24 Hours)')">Book Now</button></td>
+              <td class="cell-sl">3</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Basic Nursing Care (24 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹1,000.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (24 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">4</td>
-              <td><strong>Nursing Care (8 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹600.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (8 Hours)')">Book Now</button></td>
+              <td class="cell-sl">4</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Nursing Care (8 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹600.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (8 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">5</td>
-              <td><strong>Nursing Care (12 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹800.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (12 Hours)')">Book Now</button></td>
+              <td class="cell-sl">5</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Nursing Care (12 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹800.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (12 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">6</td>
-              <td><strong>Nursing Care (24 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹1,500.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (24 Hours)')">Book Now</button></td>
+              <td class="cell-sl">6</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Nursing Care (24 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹1,500.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (24 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">7</td>
-              <td><strong>Critical Nursing Care (8 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹1,200.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (8 Hours)')">Book Now</button></td>
+              <td class="cell-sl">7</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Critical Nursing Care (8 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹1,200.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (8 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">8</td>
-              <td><strong>Critical Nursing Care (12 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹2,200.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (12 Hours)')">Book Now</button></td>
+              <td class="cell-sl">8</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Critical Nursing Care (12 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹2,200.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (12 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">9</td>
-              <td><strong>Critical Nursing Care (24 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹3,200.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (24 Hours)')">Book Now</button></td>
+              <td class="cell-sl">9</td>
+              <td><strong><a href="home-nursing-care.php" class="pricing-link">Critical Nursing Care (24 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹3,200.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (24 Hours)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">10</td>
-              <td><strong>Rental ICU Setup at Home (24 Hours)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹5,000.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Rental ICU Setup at Home')">Book Now</button></td>
+              <td class="cell-sl">10</td>
+              <td><strong><a href="home-icu-setup.php" class="pricing-link">Rental ICU Setup at Home (24 Hours)</a></strong></td>
+              <td><span class="cell-amount">₹5,000.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Rental ICU Setup at Home')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">11</td>
-              <td><strong>Nebulisation (Per Visit)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹300.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Nebulisation (Per Visit)')">Book Now</button></td>
+              <td class="cell-sl">11</td>
+              <td><strong><a href="service.php" class="pricing-link">Nebulisation (Per Visit)</a></strong></td>
+              <td><span class="cell-amount">₹300.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nebulisation (Per Visit)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">12</td>
-              <td><strong>Physiotherapist (Per Visit)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹500.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Physiotherapist (Per Visit)')">Book Now</button></td>
+              <td class="cell-sl">12</td>
+              <td><strong><a href="physiotherapy-at-home.php" class="pricing-link">Physiotherapist (Per Visit)</a></strong></td>
+              <td><span class="cell-amount">₹500.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Physiotherapist (Per Visit)')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">13</td>
-              <td><strong>Blood Collection for Home Service (Per Visit)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹150.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Blood Collection')">Book Now</button></td>
+              <td class="cell-sl">13</td>
+              <td><strong><a href="lab-tests-at-home.php" class="pricing-link">Blood Collection for Home Service (Per Visit)</a></strong></td>
+              <td><span class="cell-amount">₹150.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Blood Collection')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">14</td>
-              <td><strong>Medicine Delivery at Home (Per Visit)</strong></td>
-              <td><span style="font-weight: 700; color: #1e3c72;">₹100.00/-</span> *</td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Medicine Delivery')">Book Now</button></td>
+              <td class="cell-sl">14</td>
+              <td><strong><a href="service.php" class="pricing-link">Medicine Delivery at Home (Per Visit)</a></strong></td>
+              <td><span class="cell-amount">₹100.00/-</span> *</td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Medicine Delivery')">Book Now</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">15</td>
-              <td><strong>Consumables</strong></td>
+              <td class="cell-sl">15</td>
+              <td><strong><a href="medical-equipment.php" class="pricing-link">Consumables</a></strong></td>
               <td><span class="pricing-badge">MRP Rates</span></td>
-              <td style="text-align: center;"><button class="buy-btn" onclick="selectAndScroll('Consumables Enquiry')">Enquire</button></td>
+              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Consumables Enquiry')">Enquire</button></td>
             </tr>
             <tr>
-              <td style="text-align: center; font-weight: 600; color: #475569;">16</td>
-              <td><strong>Air Ambulance</strong></td>
-              <td><span class="pricing-badge" style="background:#fee2e2; color:#ef4444;">Call for Price</span></td>
-              <td style="text-align: center;"><a href="tel:+919876543210" class="buy-btn" style="background:#ff4757;">Call Now</a></td>
+              <td class="cell-sl">16</td>
+              <td><strong><a href="service.php" class="pricing-link">Air Ambulance</a></strong></td>
+              <td><span class="pricing-badge badge-danger">Call for Price</span></td>
+              <td class="cell-center"><a href="tel:+919876543210" class="buy-btn btn-coral-red">Call Now</a></td>
             </tr>
           </tbody>
         </table>
@@ -152,8 +152,8 @@ include 'includes/header.php';
     </div>
 
     <!-- TABS SECTION FOR CAREGIVER DUTIES -->
-    <div class="tabs-container" style="margin-top: 4rem;">
-      <div class="section-header" style="margin-bottom:1.5rem; padding:0; max-width: 900px; text-align:center; margin:0 auto 2rem;">
+    <div class="tabs-container pricing-wrapper-margin">
+      <div class="section-header tabs-section-header">
         <div class="eyebrow">Attendant Duties</div>
         <h2>What's Included in the Service</h2>
         <p>Compare the detailed duties included in each nursing care category.</p>
@@ -167,9 +167,9 @@ include 'includes/header.php';
 
       <!-- Basic Care Content -->
       <div id="basic-care" class="tab-content active">
-        <div style="margin-bottom:1.5rem;">
-          <h3 style="color:#1e3c72; margin-bottom:0.5rem;"><i class="fas fa-heartbeat" style="color:#ff4757;"></i> Basic Nursing Attendant Duties</h3>
-          <p style="color:#64748b; font-size:0.95rem;">Focuses on daily living support, basic monitoring, and personal hygiene care.</p>
+        <div class="tab-detail-header">
+          <h3 class="tab-detail-title"><i class="fas fa-heartbeat tab-detail-icon"></i> Basic Nursing Attendant Duties</h3>
+          <p class="tab-detail-desc">Focuses on daily living support, basic monitoring, and personal hygiene care.</p>
         </div>
         <ul class="duty-list">
           <li><i class="fas fa-check-circle"></i> Personal care (bathing, grooming, toileting)</li>
@@ -188,9 +188,9 @@ include 'includes/header.php';
 
       <!-- Standard Care Content -->
       <div id="standard-care" class="tab-content">
-        <div style="margin-bottom:1.5rem;">
-          <h3 style="color:#1e3c72; margin-bottom:0.5rem;"><i class="fas fa-user-nurse" style="color:#ff4757;"></i> Standard Nursing Attendant Duties</h3>
-          <p style="color:#64748b; font-size:0.95rem;">Provides bedside care along with medical intervention support under supervision.</p>
+        <div class="tab-detail-header">
+          <h3 class="tab-detail-title"><i class="fas fa-user-nurse tab-detail-icon"></i> Standard Nursing Attendant Duties</h3>
+          <p class="tab-detail-desc">Provides bedside care along with medical intervention support under supervision.</p>
         </div>
         <ul class="duty-list">
           <li><i class="fas fa-check-circle"></i> Personal care (bathing, grooming, eating, dressing)</li>
@@ -207,9 +207,9 @@ include 'includes/header.php';
 
       <!-- Critical Care Content -->
       <div id="critical-care" class="tab-content">
-        <div style="margin-bottom:1.5rem;">
-          <h3 style="color:#1e3c72; margin-bottom:0.5rem;"><i class="fas fa-laptop-medical" style="color:#ff4757;"></i> Critical Nursing Attendant Duties</h3>
-          <p style="color:#64748b; font-size:0.95rem;">Handles high-dependency clinical care, critical parameters, and medical devices.</p>
+        <div class="tab-detail-header">
+          <h3 class="tab-detail-title"><i class="fas fa-laptop-medical tab-detail-icon"></i> Critical Nursing Attendant Duties</h3>
+          <p class="tab-detail-desc">Handles high-dependency clinical care, critical parameters, and medical devices.</p>
         </div>
         <ul class="duty-list">
           <li><i class="fas fa-check-circle"></i> Intravenous Medication administration</li>
@@ -226,10 +226,10 @@ include 'includes/header.php';
     </div>
 
     <!-- BOOKING FORM -->
-    <div id="booking-section" style="max-width: 650px; margin: 4rem auto 1rem; text-align: center;" class="reveal">
-      <div class="enquiry-card premium-card" style="padding: 2.5rem; text-align: left;">
-        <h3 style="text-align: center; color: #1e3c72; margin-bottom: 0.5rem; font-size: 1.6rem;"><i class="fas fa-file-medical"></i> Book Appointment</h3>
-        <p style="text-align: center; color: #5b6472; margin-bottom: 2rem;">Secure your booking slot. Our coordinator will contact you shortly.</p>
+    <div id="booking-section" class="booking-form-wrapper reveal">
+      <div class="enquiry-card premium-card booking-card-padding">
+        <h3 class="booking-form-title"><i class="fas fa-file-medical"></i> Book Appointment</h3>
+        <p class="booking-form-desc">Secure your booking slot. Our coordinator will contact you shortly.</p>
         
         <form action="backend/contact.php" method="POST" id="pricingBookingForm">
           <div class="premium-form-group">
@@ -269,9 +269,9 @@ include 'includes/header.php';
             <textarea name="message" rows="4" class="premium-form-input" placeholder="Describe the patient's condition, age, and your address..." required></textarea>
           </div>
           
-          <button type="submit" class="btn-primary" style="border:0; cursor:pointer; width:100%; font-weight:600; padding:1rem; border-radius:8px; background:#ff4757;">Confirm Booking Details</button>
+          <button type="submit" class="booking-submit-btn">Confirm Booking Details</button>
         </form>
-        <div id="bookingFormMessage" class="form-message" style="text-align: center;"></div>
+        <div id="bookingFormMessage" class="form-message booking-message-center"></div>
       </div>
     </div>
 
