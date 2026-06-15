@@ -144,36 +144,59 @@ include 'includes/header.php';
   <!-- WHY CHOOSE US -->
   <section class="modern-trust-section" aria-label="Why choose Aparajita Health Kavach">
     <div class="container">
-      <div class="modern-title-area">
-        <span class="eyebrow">Trust &amp; Quality</span>
-        <h2>Why Families Trust Us</h2>
-        <p>We provide hospital-grade care in the comfort of your home, ensuring professional medical oversight and emotional support.</p>
-      </div>
-      
-      <div class="trust-grid">
-        <div class="trust-card">
-          <div class="trust-icon-box"><i class="fas fa-hand-holding-medical"></i></div>
-          <h3>Patient-First Care</h3>
-          <p>Safe, timely nursing, vital monitoring, and personalized care plans customized for every patient at home.</p>
-        </div>
+      <div class="trust-container">
         
-        <div class="trust-card">
-          <div class="trust-icon-box"><i class="fas fa-user-nurse"></i></div>
-          <h3>Trained Care Team</h3>
-          <p>Verified, qualified, and background-checked nurses &amp; caregivers with constant medical supervision.</p>
+        <!-- Left Side: Interactive Brand Promise & Key Highlights -->
+        <div class="trust-brand-promise">
+          <div class="promise-badge"><i class="fas fa-certificate"></i> Govt. Registered &amp; ISO Certified</div>
+          <h2>Hospital-Grade Healthcare, Delivered Safely at Your Home</h2>
+          <p>Aparajita Health Kavach is Patna's premier healthcare service provider. We bridge the gap between hospital treatment and home recovery with qualified clinical teams, daily health reports, and prompt escalation systems.</p>
+          
+          <div class="promise-features">
+            <div class="promise-feat-item">
+              <div class="feat-bullet"><i class="fas fa-check"></i></div>
+              <div>
+                <h4>Continuous Medical Supervision</h4>
+                <p>All care plans are supervised by doctors and senior nursing administrators.</p>
+              </div>
+            </div>
+            <div class="promise-feat-item">
+              <div class="feat-bullet"><i class="fas fa-check"></i></div>
+              <div>
+                <h4>100% Background-Verified Staff</h4>
+                <p>Rigorous verification process for maximum patient safety and absolute peace of mind.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="trust-card">
-          <div class="trust-icon-box"><i class="fas fa-laptop-medical"></i></div>
-          <h3>Complete Home Services</h3>
-          <p>One-stop solution for Home ICU setups, oxygen support, routine wellness visits, physiotherapy, and lab tests.</p>
+
+        <!-- Right Side: The 4 Core Pillars Grid -->
+        <div class="trust-cards-grid">
+          <div class="trust-card-new">
+            <div class="trust-icon-box red-gradient"><i class="fas fa-hand-holding-medical"></i></div>
+            <h3>Patient-First Care</h3>
+            <p>Safe, timely nursing, vital monitoring, and personalized care plans customized for every patient at home.</p>
+          </div>
+          
+          <div class="trust-card-new">
+            <div class="trust-icon-box blue-gradient"><i class="fas fa-user-nurse"></i></div>
+            <h3>Trained Care Team</h3>
+            <p>Verified, qualified, and background-checked nurses &amp; caregivers with constant medical supervision.</p>
+          </div>
+          
+          <div class="trust-card-new">
+            <div class="trust-icon-box green-gradient"><i class="fas fa-laptop-medical"></i></div>
+            <h3>Complete Home Services</h3>
+            <p>One-stop solution for Home ICU setups, oxygen support, routine wellness visits, physiotherapy, and lab tests.</p>
+          </div>
+          
+          <div class="trust-card-new">
+            <div class="trust-icon-box orange-gradient"><i class="fas fa-phone-alt"></i></div>
+            <h3>Fast Response, 24/7</h3>
+            <p>Our dedicated support lines and coordinators are active 24/7 for prompt updates and emergency support.</p>
+          </div>
         </div>
-        
-        <div class="trust-card">
-          <div class="trust-icon-box"><i class="fas fa-phone-alt"></i></div>
-          <h3>Fast Response, 24/7</h3>
-          <p>Our dedicated support lines and coordinators are active 24/7 for prompt updates and emergency support.</p>
-        </div>
+
       </div>
     </div>
   </section>
@@ -364,6 +387,71 @@ include 'includes/header.php';
             <div class="modern-chip">+ All Bihar</div>
           </div>
         </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="modern-faq-section" id="faqs">
+    <div class="container">
+      <div class="modern-title-area">
+        <span class="eyebrow">FAQs</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Find answers to common questions about our home nursing, elderly care, and critical healthcare services.</p>
+      </div>
+
+      <div class="faq-accordion-container">
+        
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>What nursing services do you provide at home?</span>
+            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+          </summary>
+          <div class="faq-answer">
+            <p>We provide full-spectrum home healthcare including Basic Attendant Care, Standard Nursing Care (bed sores, dressings, feeding, vitals, vitals logging), Critical Nursing Care (ventilator, tracheostomy, IV line management), Home ICU setups, Physiotherapy sessions, and Lab test collections at home.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Are your caregivers background checked and trained?</span>
+            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes, all our nurses and care attendants undergo strict background verification (address and identity check) and are qualified medical professionals or trained assistants. They work under constant clinical supervision to ensure maximum patient safety.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What are the booking policies and advance payments?</span>
+            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+          </summary>
+          <div class="faq-answer">
+            <p>For home nursing services, we require an advance payment booking. The booking duration varies based on care tier (e.g., 15 days advance for Basic, 10 days for Nursing, and 8 days for Critical). All payments are non-refundable since we dedicate staff resources to your patient's schedule.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can we request a change if we are not satisfied with the caregiver?</span>
+            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Absolutely. If you feel the assigned caregiver is not a suitable fit for your patient's specific care requirements, we will coordinate and arrange a qualified replacement caregiver within 24 hours.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Which areas do you serve in Patna and Bihar?</span>
+            <span class="faq-toggle-icon"><i class="fas fa-plus"></i></span>
+          </summary>
+          <div class="faq-answer">
+            <p>We are headquartered in Patna and actively serve Boring Road, Danapur, Khagaul, Phulwari Sharif, Kankarbagh, and other key areas. Additionally, we provide critical care setup and nursing support services across major districts in Bihar including Hajipur, Muzaffarpur, Gaya, Ara, and Chapra.</p>
+          </div>
+        </details>
 
       </div>
     </div>

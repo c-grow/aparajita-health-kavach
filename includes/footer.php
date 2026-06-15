@@ -27,7 +27,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=<?php echo filemtime('script.js'); ?>"></script>
   <?php if (isset($extra_js)) echo $extra_js; ?>
 </body>
 </html>
