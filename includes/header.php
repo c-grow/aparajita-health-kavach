@@ -24,6 +24,7 @@
         <ul>
           <li><a href="index.php" class="<?php echo (isset($active_page) && $active_page === 'home') ? 'active' : ''; ?>">Home</a></li>
           <li><a href="service.php" class="<?php echo (isset($active_page) && $active_page === 'service') ? 'active' : ''; ?>">Services</a></li>
+          <li><a href="pricing.php" class="<?php echo (isset($active_page) && $active_page === 'pricing') ? 'active' : ''; ?>">Pricing</a></li>
           <li><a href="gallery.php" class="<?php echo (isset($active_page) && $active_page === 'gallery') ? 'active' : ''; ?>">Gallery</a></li>
           <li><a href="comfort-living.php" class="<?php echo (isset($active_page) && $active_page === 'comfort-living') ? 'active' : ''; ?>">Comfort Living</a></li>
           <li><a href="contact.php" class="<?php echo (isset($active_page) && $active_page === 'contact') ? 'active' : ''; ?>">Contact</a></li>
