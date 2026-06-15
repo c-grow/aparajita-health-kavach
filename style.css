@@ -1479,7 +1479,7 @@ nav ul li a {
 /* 1. Trust & Quality Section */
 .modern-trust-section {
     padding: 6rem 0;
-    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    background: #ffffff;
     position: relative;
     overflow: hidden;
 }
@@ -1688,7 +1688,7 @@ nav ul li a {
 /* 4. Serving Across Bihar Section */
 .modern-coverage-section {
     padding: 6rem 0;
-    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    background: #f8fafc;
 }
 
 .coverage-container {
@@ -2091,7 +2091,7 @@ nav ul li a {
 /* FAQ Accordion Styles */
 .modern-faq-section {
     padding: 6rem 0;
-    background: #f8fafc;
+    background: #ffffff;
 }
 
 .faq-accordion-container {
@@ -2212,46 +2212,48 @@ nav ul li a {
     }
 }
 
-/* Section Separator Styles */
-.section-separator {
-    position: relative;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(30, 60, 114, 0.1) 50%, transparent);
-    margin: 4.5rem auto 0;
-    max-width: 900px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Service Card Custom Color Variations */
+.service-card-new.card-blue .service-icon-box { background: rgba(30, 60, 114, 0.08); color: #1e3c72; }
+.service-card-new.card-purple .service-icon-box { background: rgba(139, 92, 246, 0.08); color: #8b5cf6; }
+.service-card-new.card-red .service-icon-box { background: rgba(239, 68, 68, 0.08); color: #ef4444; }
+.service-card-new.card-green .service-icon-box { background: rgba(16, 185, 129, 0.08); color: #10b981; }
+.service-card-new.card-orange .service-icon-box { background: rgba(245, 158, 11, 0.08); color: #f59e0b; }
+.service-card-new.card-teal .service-icon-box { background: rgba(20, 184, 166, 0.08); color: #14b8a6; }
+.service-card-new.card-pink .service-icon-box { background: rgba(236, 72, 153, 0.08); color: #ec4899; }
+.service-card-new.card-slate .service-icon-box { background: rgba(100, 116, 139, 0.08); color: #64748b; }
 
-.section-separator::after {
-    content: "\f21e";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    color: rgba(255, 71, 87, 0.35);
-    padding: 0 1.5rem;
-    font-size: 1.1rem;
-    position: absolute;
-}
+.service-card-new.card-blue:hover .service-icon-box { background: #1e3c72; color: #ffffff; }
+.service-card-new.card-purple:hover .service-icon-box { background: #8b5cf6; color: #ffffff; }
+.service-card-new.card-red:hover .service-icon-box { background: #ef4444; color: #ffffff; }
+.service-card-new.card-green:hover .service-icon-box { background: #10b981; color: #ffffff; }
+.service-card-new.card-orange:hover .service-icon-box { background: #f59e0b; color: #ffffff; }
+.service-card-new.card-teal:hover .service-icon-box { background: #14b8a6; color: #ffffff; }
+.service-card-new.card-pink:hover .service-icon-box { background: #ec4899; color: #ffffff; }
+.service-card-new.card-slate:hover .service-icon-box { background: #64748b; color: #ffffff; }
 
-.modern-trust-section .section-separator::after { background: #f8fafc; }
-.modern-services-section .section-separator::after { background: #ffffff; }
-.modern-testi-section .section-separator::after { background: #ffffff; }
-.modern-coverage-section .section-separator::after { background: #ffffff; }
-.modern-faq-section .section-separator::after { background: #f8fafc; }
-
-/* Revamped Testimonials Style */
+/* Revamped Testimonials Style with Left Highlight Line */
 .modern-testi-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
     border-radius: 24px;
     border: 1px solid rgba(30, 60, 114, 0.05);
     padding: 3.5rem 3rem;
-    box-shadow: 0 15px 35px rgba(30, 60, 114, 0.03);
+    box-shadow: 0 15px 35px rgba(30, 60, 114, 0.025);
     position: relative;
     margin: 20px auto;
     max-width: 750px;
     overflow: hidden;
     transition: all 0.35s ease;
+}
+
+.modern-testi-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #ff4757;
+    transition: width 0.3s ease;
 }
 
 .modern-testi-card::before {
@@ -2260,7 +2262,7 @@ nav ul li a {
     font-weight: 900;
     position: absolute;
     top: 1.5rem;
-    left: 2rem;
+    left: 2.5rem;
     font-size: 5rem;
     color: rgba(255, 71, 87, 0.03);
     pointer-events: none;
@@ -2268,8 +2270,12 @@ nav ul li a {
 
 .modern-testi-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 22px 45px rgba(30, 60, 114, 0.08);
-    border-color: rgba(255, 71, 87, 0.1);
+    box-shadow: 0 25px 50px rgba(30, 60, 114, 0.08);
+    border-color: rgba(255, 71, 87, 0.12);
+}
+
+.modern-testi-card:hover::after {
+    width: 6px;
 }
 
 .modern-testi-card .stars {

@@ -197,7 +197,6 @@ include 'includes/header.php';
           </div>
         </div>
 
-        <div class="section-separator"></div>
       </div>
     </div>
   </section>
@@ -213,56 +212,56 @@ include 'includes/header.php';
 
       <div class="services-card-grid">
 
-        <a class="service-card-new reveal" href="home-nursing-care.php" aria-label="Home Nursing Care">
+        <a class="service-card-new card-blue reveal" href="home-nursing-care.php" aria-label="Home Nursing Care">
           <div class="service-icon-box"><i class="fas fa-user-nurse"></i></div>
           <h3>Home Nursing Care</h3>
           <p>Skilled nursing support for recovery, medication administration, and daily care needs.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="elderly-care.php" aria-label="Elderly Care">
+        <a class="service-card-new card-purple reveal" href="elderly-care.php" aria-label="Elderly Care">
           <div class="service-icon-box"><i class="fas fa-user-md"></i></div>
           <h3>Elderly Care</h3>
           <p>Compassionate assistance, health tracking, and comfort for senior family members.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="home-icu-setup.php" aria-label="Home ICU Setup">
+        <a class="service-card-new card-red reveal" href="home-icu-setup.php" aria-label="Home ICU Setup">
           <div class="service-icon-box"><i class="fas fa-laptop-medical"></i></div>
           <h3>Home ICU Setup</h3>
           <p>Advanced critical care equipment, monitors, and expert support at home.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="physiotherapy-at-home.php" aria-label="Physiotherapy at Home">
+        <a class="service-card-new card-green reveal" href="physiotherapy-at-home.php" aria-label="Physiotherapy at Home">
           <div class="service-icon-box"><i class="fas fa-walking"></i></div>
           <h3>Physiotherapy</h3>
           <p>Personalized physical rehabilitation and post-op mobility recovery sessions.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="lab-tests-at-home.php" aria-label="Lab Tests at Home">
+        <a class="service-card-new card-orange reveal" href="lab-tests-at-home.php" aria-label="Lab Tests at Home">
           <div class="service-icon-box"><i class="fas fa-flask"></i></div>
           <h3>Lab Tests at Home</h3>
           <p>Safe sample collection and convenient professional diagnostic testing services.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="medical-equipment.php" aria-label="Medical Equipment">
+        <a class="service-card-new card-teal reveal" href="medical-equipment.php" aria-label="Medical Equipment">
           <div class="service-icon-box"><i class="fas fa-bed"></i></div>
           <h3>Medical Equipment</h3>
           <p>Reliable rental and supply of medical devices, beds, and support equipment.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="child-care.php" aria-label="Child Care">
+        <a class="service-card-new card-pink reveal" href="child-care.php" aria-label="Child Care">
           <div class="service-icon-box"><i class="fas fa-baby"></i></div>
           <h3>Child Care</h3>
           <p>Trusted newborn baby care, nanny services, and pediatric nursing.</p>
           <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
         </a>
 
-        <a class="service-card-new reveal" href="house-cleaning-sanitization.php" aria-label="House Cleaning & Sanitization">
+        <a class="service-card-new card-slate reveal" href="house-cleaning-sanitization.php" aria-label="House Cleaning & Sanitization">
           <div class="service-icon-box"><i class="fas fa-broom"></i></div>
           <h3>House Cleaning</h3>
           <p>Clean, hygienic environments to support patient recovery and safety.</p>
@@ -270,7 +269,6 @@ include 'includes/header.php';
         </a>
 
       </div>
-      <div class="section-separator"></div>
     </div>
   </section>
 
@@ -360,7 +358,6 @@ include 'includes/header.php';
         <span class="dot" data-slide="1"></span>
         <span class="dot" data-slide="2"></span>
       </div>
-      <div class="section-separator"></div>
     </div>
   </section>
 
@@ -453,7 +450,6 @@ include 'includes/header.php';
         </div>
 
       </div>
-      <div class="section-separator"></div>
     </div>
   </section>
 
@@ -576,7 +572,6 @@ include 'includes/header.php';
 
         </div>
       </div>
-      <div class="section-separator"></div>
     </div>
   </section>
 
