@@ -142,188 +142,230 @@ include 'includes/header.php';
   </section>
 
   <!-- WHY CHOOSE US -->
-  <section class="features" aria-label="Why choose Aparajita Health Kavach" style="padding: 5.5rem 0; background: #ffffff;">
+  <section class="modern-trust-section" aria-label="Why choose Aparajita Health Kavach">
     <div class="container">
-      <div class="section-header" style="text-align: center; margin-bottom: 3.5rem;">
-        <div class="eyebrow">Trust &amp; Quality</div>
-        <h2 style="color: #1e3c72; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.8rem;">Why Families Trust Us</h2>
-        <p style="color: #64748b; font-size: 1.05rem; max-width: 700px; margin: 0 auto;">We provide hospital-grade care in the comfort of your home, ensuring professional medical oversight and emotional support.</p>
+      <div class="modern-title-area">
+        <span class="eyebrow">Trust &amp; Quality</span>
+        <h2>Why Families Trust Us</h2>
+        <p>We provide hospital-grade care in the comfort of your home, ensuring professional medical oversight and emotional support.</p>
       </div>
       
-      <div class="feature-grid">
-        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
-          <div style="width: 55px; height: 55px; background: rgba(255, 71, 87, 0.08); color: #ff4757; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-hand-holding-medical"></i></div>
-          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Patient-First Care</h3>
-          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">Safe, timely nursing, vital monitoring, and personalized care plans customized for every patient at home.</p>
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon-box"><i class="fas fa-hand-holding-medical"></i></div>
+          <h3>Patient-First Care</h3>
+          <p>Safe, timely nursing, vital monitoring, and personalized care plans customized for every patient at home.</p>
         </div>
         
-        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
-          <div style="width: 55px; height: 55px; background: rgba(30, 60, 114, 0.08); color: #1e3c72; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-user-nurse"></i></div>
-          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Trained Care Team</h3>
-          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">Verified, qualified, and background-checked nurses &amp; caregivers with constant medical supervision.</p>
+        <div class="trust-card">
+          <div class="trust-icon-box"><i class="fas fa-user-nurse"></i></div>
+          <h3>Trained Care Team</h3>
+          <p>Verified, qualified, and background-checked nurses &amp; caregivers with constant medical supervision.</p>
         </div>
         
-        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
-          <div style="width: 55px; height: 55px; background: rgba(16, 185, 129, 0.08); color: #10b981; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-laptop-medical"></i></div>
-          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Complete Home Services</h3>
-          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">One-stop solution for Home ICU setups, oxygen support, routine wellness visits, physiotherapy, and lab tests.</p>
+        <div class="trust-card">
+          <div class="trust-icon-box"><i class="fas fa-laptop-medical"></i></div>
+          <h3>Complete Home Services</h3>
+          <p>One-stop solution for Home ICU setups, oxygen support, routine wellness visits, physiotherapy, and lab tests.</p>
         </div>
         
-        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
-          <div style="width: 55px; height: 55px; background: rgba(245, 158, 11, 0.08); color: #f59e0b; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-phone-alt"></i></div>
-          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Fast Response, 24/7</h3>
-          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">Our dedicated support lines and coordinators are active 24/7 for prompt updates and emergency support.</p>
+        <div class="trust-card">
+          <div class="trust-icon-box"><i class="fas fa-phone-alt"></i></div>
+          <h3>Fast Response, 24/7</h3>
+          <p>Our dedicated support lines and coordinators are active 24/7 for prompt updates and emergency support.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section section-alt" id="services" style="padding: 5.5rem 0; background: #f8fafc;">
-    <div class="section-header reveal">
-      <div class="eyebrow">Our Services</div>
-      <h2 style="color: #1e3c72; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.8rem;">Healthcare at Home</h2>
-      <p style="color: #64748b; font-size: 1.05rem; max-width: 700px; margin: 0 auto;">Professional healthcare services designed for comfort, recovery, and well-being at home.</p>
-    </div>
+  <section class="modern-services-section" id="services">
+    <div class="container">
+      <div class="modern-title-area reveal">
+        <span class="eyebrow">Our Services</span>
+        <h2>Healthcare at Home</h2>
+        <p>Professional healthcare services designed for comfort, recovery, and well-being at home.</p>
+      </div>
 
-    <div class="services-grid">
+      <div class="services-card-grid">
 
-      <a class="service-card reveal" href="home-nursing-care.php" aria-label="Home Nursing Care" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-user-nurse"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Home Nursing Care</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Skilled nursing support for recovery, medication administration, and daily care needs.</p>
-      </a>
+        <a class="service-card-new reveal" href="home-nursing-care.php" aria-label="Home Nursing Care">
+          <div class="service-icon-box"><i class="fas fa-user-nurse"></i></div>
+          <h3>Home Nursing Care</h3>
+          <p>Skilled nursing support for recovery, medication administration, and daily care needs.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="elderly-care.php" aria-label="Elderly Care" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-user-md"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Elderly Care</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Compassionate assistance, health tracking, and comfort for senior family members.</p>
-      </a>
+        <a class="service-card-new reveal" href="elderly-care.php" aria-label="Elderly Care">
+          <div class="service-icon-box"><i class="fas fa-user-md"></i></div>
+          <h3>Elderly Care</h3>
+          <p>Compassionate assistance, health tracking, and comfort for senior family members.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="home-icu-setup.php" aria-label="Home ICU Setup" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-laptop-medical"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Home ICU Setup</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Advanced critical care equipment, monitors, and expert support at home.</p>
-      </a>
+        <a class="service-card-new reveal" href="home-icu-setup.php" aria-label="Home ICU Setup">
+          <div class="service-icon-box"><i class="fas fa-laptop-medical"></i></div>
+          <h3>Home ICU Setup</h3>
+          <p>Advanced critical care equipment, monitors, and expert support at home.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="physiotherapy-at-home.php" aria-label="Physiotherapy at Home" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-walking"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Physiotherapy</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Personalized physical rehabilitation and post-op mobility recovery sessions.</p>
-      </a>
+        <a class="service-card-new reveal" href="physiotherapy-at-home.php" aria-label="Physiotherapy at Home">
+          <div class="service-icon-box"><i class="fas fa-walking"></i></div>
+          <h3>Physiotherapy</h3>
+          <p>Personalized physical rehabilitation and post-op mobility recovery sessions.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="lab-tests-at-home.php" aria-label="Lab Tests at Home" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-flask"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Lab Tests at Home</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Safe sample collection and convenient professional diagnostic testing services.</p>
-      </a>
+        <a class="service-card-new reveal" href="lab-tests-at-home.php" aria-label="Lab Tests at Home">
+          <div class="service-icon-box"><i class="fas fa-flask"></i></div>
+          <h3>Lab Tests at Home</h3>
+          <p>Safe sample collection and convenient professional diagnostic testing services.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="medical-equipment.php" aria-label="Medical Equipment" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-bed"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Medical Equipment</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Reliable rental and supply of medical devices, beds, and support equipment.</p>
-      </a>
+        <a class="service-card-new reveal" href="medical-equipment.php" aria-label="Medical Equipment">
+          <div class="service-icon-box"><i class="fas fa-bed"></i></div>
+          <h3>Medical Equipment</h3>
+          <p>Reliable rental and supply of medical devices, beds, and support equipment.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="child-care.php" aria-label="Child Care" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-baby"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Child Care</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Trusted newborn baby care, nanny services, and pediatric nursing.</p>
-      </a>
+        <a class="service-card-new reveal" href="child-care.php" aria-label="Child Care">
+          <div class="service-icon-box"><i class="fas fa-baby"></i></div>
+          <h3>Child Care</h3>
+          <p>Trusted newborn baby care, nanny services, and pediatric nursing.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
-      <a class="service-card reveal" href="house-cleaning-sanitization.php" aria-label="House Cleaning & Sanitization" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
-        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-broom"></i></div>
-        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">House Cleaning</h3>
-        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Clean, hygienic environments to support patient recovery and safety.</p>
-      </a>
+        <a class="service-card-new reveal" href="house-cleaning-sanitization.php" aria-label="House Cleaning & Sanitization">
+          <div class="service-icon-box"><i class="fas fa-broom"></i></div>
+          <h3>House Cleaning</h3>
+          <p>Clean, hygienic environments to support patient recovery and safety.</p>
+          <span class="learn-more">Learn More <i class="fas fa-arrow-right"></i></span>
+        </a>
 
+      </div>
     </div>
   </section>
+
   <!-- TESTIMONIALS -->
-  <section class="section" id="testimonials">
-    <div class="section-header reveal">
-      <div class="eyebrow">Testimonials</div>
-      <h2>What Our Families Say</h2>
-      <p>Real stories from families we've served across Patna and Bihar.</p>
-    </div>
-    
-    <div class="testimonial-slider-container reveal">
-      <button class="slider-btn prev-btn" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
-      
-      <div class="testimonial-slider-wrapper">
-        <div class="testimonial-slider">
-          
-          <div class="testi-slide">
-            <div class="testi-card">
-              <div class="stars">★★★★★</div>
-              <p class="testi-text">The nurse assigned to my mother was incredibly caring and professional. She managed all medications and kept us updated daily. We could not have asked for better support.</p>
-              <div class="testi-author">
-                <div class="testi-avatar">RK</div>
-                <div>
-                  <div class="testi-name">Ramesh Kumar</div>
-                  <div class="testi-role">Patna, Bihar</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-slide">
-            <div class="testi-card">
-              <div class="stars">★★★★★</div>
-              <p class="testi-text">The home ICU setup was done within hours and the care team was truly like family. My father recovered comfortably at home instead of a hospital. Truly grateful.</p>
-              <div class="testi-author">
-                <div class="testi-avatar">PD</div>
-                <div>
-                  <div class="testi-name">Priya Devi</div>
-                  <div class="testi-role">Boring Road, Patna</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-slide">
-            <div class="testi-card">
-              <div class="stars">★★★★★</div>
-              <p class="testi-text">The Comfort Living facility has been a blessing for my elderly mother. She gets doctor visits, healthy food, and great company. The staff treats her like their own family.</p>
-              <div class="testi-author">
-                <div class="testi-avatar">AS</div>
-                <div>
-                  <div class="testi-name">Amit Sinha</div>
-                  <div class="testi-role">Danapur, Patna</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
+  <section class="modern-testi-section" id="testimonials">
+    <div class="container">
+      <div class="modern-title-area reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What Our Families Say</h2>
+        <p>Real stories from families we've served across Patna and Bihar.</p>
       </div>
       
-      <button class="slider-btn next-btn" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
-    </div>
-    
-    <div class="slider-dots">
-      <span class="dot active" data-slide="0"></span>
-      <span class="dot" data-slide="1"></span>
-      <span class="dot" data-slide="2"></span>
+      <div class="testimonial-slider-container reveal">
+        <button class="slider-btn prev-btn" aria-label="Previous Testimonial"><i class="fas fa-chevron-left"></i></button>
+        
+        <div class="testimonial-slider-wrapper">
+          <div class="testimonial-slider">
+            
+            <div class="testi-slide">
+              <div class="modern-testi-card">
+                <span class="stars">★★★★★</span>
+                <p class="testi-text">The nurse assigned to my mother was incredibly caring and professional. She managed all medications and kept us updated daily. We could not have asked for better support.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar">RK</div>
+                  <div>
+                    <div class="testi-name">Ramesh Kumar</div>
+                    <div class="testi-role">Patna, Bihar</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-slide">
+              <div class="modern-testi-card">
+                <span class="stars">★★★★★</span>
+                <p class="testi-text">The home ICU setup was done within hours and the care team was truly like family. My father recovered comfortably at home instead of a hospital. Truly grateful.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar">PD</div>
+                  <div>
+                    <div class="testi-name">Priya Devi</div>
+                    <div class="testi-role">Boring Road, Patna</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testi-slide">
+              <div class="modern-testi-card">
+                <span class="stars">★★★★★</span>
+                <p class="testi-text">The Comfort Living facility has been a blessing for my elderly mother. She gets doctor visits, healthy food, and great company. The staff treats her like their own family.</p>
+                <div class="testi-author">
+                  <div class="testi-avatar">AS</div>
+                  <div>
+                    <div class="testi-name">Amit Sinha</div>
+                    <div class="testi-role">Danapur, Patna</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+        <button class="slider-btn next-btn" aria-label="Next Testimonial"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      
+      <div class="slider-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
     </div>
   </section>
 
   <!-- COVERAGE -->
-  <section class="coverage-section">
-    <h2>Serving Across Bihar</h2>
-    <p>Bringing professional healthcare to families all across Patna and surrounding districts</p>
-    <div class="coverage-chips">
-      <div class="chip main">📍 Patna (HQ)</div>
-      <div class="chip">Boring Road</div>
-      <div class="chip">Danapur</div>
-      <div class="chip">Khagaul</div>
-      <div class="chip">Phulwari Sharif</div>
-      <div class="chip">Hajipur</div>
-      <div class="chip">Muzaffarpur</div>
-      <div class="chip">Gaya</div>
-      <div class="chip">Ara</div>
-      <div class="chip">Chapra</div>
-      <div class="chip">Bihar Sharif</div>
-      <div class="chip">+ All Bihar</div>
+  <section class="modern-coverage-section">
+    <div class="container">
+      <div class="coverage-container">
+        
+        <!-- Left: Stats & Headquarters Card -->
+        <div class="coverage-visual">
+          <div class="coverage-hq">
+            <div class="coverage-hq-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h3>Patna Headquarters</h3>
+              <p>Centrally located to coordinate care fast</p>
+            </div>
+          </div>
+          <div class="coverage-stats">
+            <div class="stat-item">
+              <h4>10K+</h4>
+              <p>Happy Families</p>
+            </div>
+            <div class="stat-item">
+              <h4>15+</h4>
+              <p>Districts Covered</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Modern active neighbourhood list -->
+        <div class="coverage-showcase">
+          <h3>Serving Across Bihar</h3>
+          <div class="modern-chips-grid">
+            <div class="modern-chip hq-chip"><span class="active-dot"></span> Patna (HQ)</div>
+            <div class="modern-chip">Boring Road</div>
+            <div class="modern-chip">Danapur</div>
+            <div class="modern-chip">Khagaul</div>
+            <div class="modern-chip">Phulwari Sharif</div>
+            <div class="modern-chip">Hajipur</div>
+            <div class="modern-chip">Muzaffarpur</div>
+            <div class="modern-chip">Gaya</div>
+            <div class="modern-chip">Ara</div>
+            <div class="modern-chip">Chapra</div>
+            <div class="modern-chip">Bihar Sharif</div>
+            <div class="modern-chip">+ All Bihar</div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 

@@ -1445,4 +1445,398 @@ nav ul li a {
     font-size: 0.82rem;
 }
 
+/* Modern Homepage Sections Redesign */
+.modern-title-area {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.modern-title-area .eyebrow {
+    color: #ff4757;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.6rem;
+    display: inline-block;
+}
+
+.modern-title-area h2 {
+    color: #1e3c72;
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.modern-title-area p {
+    color: #64748b;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* 1. Trust & Quality Section */
+.modern-trust-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.trust-card {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgba(30, 60, 114, 0.05);
+    padding: 3rem 2.2rem;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.015);
+    position: relative;
+}
+
+.trust-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(30, 60, 114, 0.08);
+    border-color: rgba(255, 71, 87, 0.15);
+}
+
+.trust-icon-box {
+    width: 65px;
+    height: 65px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+.trust-card:nth-child(1) .trust-icon-box { background: rgba(255, 71, 87, 0.08); color: #ff4757; }
+.trust-card:nth-child(2) .trust-icon-box { background: rgba(30, 60, 114, 0.08); color: #1e3c72; }
+.trust-card:nth-child(3) .trust-icon-box { background: rgba(16, 185, 129, 0.08); color: #10b981; }
+.trust-card:nth-child(4) .trust-icon-box { background: rgba(245, 158, 11, 0.08); color: #f59e0b; }
+
+.trust-card:hover .trust-icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.trust-card h3 {
+    color: #1e3c72;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.trust-card p {
+    color: #64748b;
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 2. Services Section */
+.modern-services-section {
+    padding: 6rem 0;
+    background: #f8fafc;
+}
+
+.services-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.service-card-new {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgba(30, 60, 114, 0.05);
+    padding: 2.5rem 2rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.015);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card-new::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #ff4757, #1e3c72);
+    transition: width 0.35s ease;
+}
+
+.service-card-new:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(30, 60, 114, 0.08);
+    border-color: rgba(30, 60, 114, 0.08);
+}
+
+.service-card-new:hover::after {
+    width: 100%;
+}
+
+.service-icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 71, 87, 0.08), rgba(30, 60, 114, 0.06));
+    color: #ff4757;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card-new:hover .service-icon-box {
+    background: linear-gradient(135deg, #ff4757, #1e3c72);
+    color: white;
+    transform: scale(1.08);
+}
+
+.service-card-new h3 {
+    color: #1e3c72;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 0.6rem;
+}
+
+.service-card-new p {
+    color: #64748b;
+    font-size: 0.94rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.service-card-new .learn-more {
+    font-size: 0.9rem;
+    color: #ff4757;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.25s ease;
+}
+
+.service-card-new:hover .learn-more {
+    color: #1e3c72;
+    gap: 0.8rem;
+}
+
+/* 3. Testimonials Section */
+.modern-testi-section {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.modern-testi-card {
+    background: white;
+    border-radius: 20px;
+    border: 1px solid rgba(30, 60, 114, 0.06);
+    padding: 3.5rem 3rem;
+    box-shadow: 0 15px 40px rgba(30, 60, 114, 0.04);
+    position: relative;
+    margin: 10px auto;
+    max-width: 750px;
+    overflow: hidden;
+}
+
+.modern-testi-card::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 2rem;
+    right: 2.5rem;
+    font-size: 4rem;
+    color: rgba(30, 60, 114, 0.04);
+    pointer-events: none;
+}
+
+.modern-testi-card .stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+
+.modern-testi-card .testi-text {
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #334155;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* 4. Serving Across Bihar Section */
+.modern-coverage-section {
+    padding: 6rem 0;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.coverage-container {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coverage-visual {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    border-radius: 24px;
+    padding: 3.5rem 3rem;
+    box-shadow: 0 20px 45px rgba(30, 60, 114, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.coverage-visual::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+}
+
+.coverage-hq {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.coverage-hq-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.1);
+    color: #ffd700;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 1.4rem;
+}
+
+.coverage-hq h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.coverage-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 2rem;
+}
+
+.stat-item h4 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffd700;
+    margin-bottom: 0.2rem;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin: 0;
+}
+
+.coverage-showcase h3 {
+    color: #1e3c72;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.modern-chips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.8rem;
+}
+
+.modern-chip {
+    background: white;
+    border: 1px solid rgba(30, 60, 114, 0.08);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    text-align: center;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #475569;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+}
+
+.modern-chip:hover {
+    background: #1e3c72;
+    color: white;
+    border-color: #1e3c72;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(30, 60, 114, 0.1);
+}
+
+.modern-chip.hq-chip {
+    background: rgba(255, 71, 87, 0.05);
+    border-color: rgba(255, 71, 87, 0.15);
+    color: #ff4757;
+}
+
+.modern-chip.hq-chip:hover {
+    background: #ff4757;
+    color: white;
+    border-color: #ff4757;
+}
+
+.active-dot {
+    width: 6px;
+    height: 6px;
+    background: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+@media (max-width: 900px) {
+    .coverage-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .modern-title-area h2 { font-size: 2.2rem; }
+    .modern-testi-card { padding: 2.2rem 1.8rem; }
+    .modern-testi-card .testi-text { font-size: 1rem; }
+}
+
+
 
