@@ -809,3 +809,280 @@ nav ul li a {
         min-height: auto;
     }
 }
+
+/* ==========================================================================
+   MODERN UI REDESIGN & PACKAGE DETAILS ADDITIONS
+   ========================================================================== */
+
+/* Pricing Table and Modern Component Styles */
+.pricing-section {
+    padding: 5rem 0;
+    background: #f8fafc;
+}
+
+.pricing-table-container {
+    overflow-x: auto;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.04);
+    border: 1px solid rgba(30, 60, 114, 0.08);
+    margin: 2rem 0;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 600px;
+}
+
+.pricing-table th, .pricing-table td {
+    padding: 1.2rem 1.5rem;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.98rem;
+}
+
+.pricing-table th {
+    background: #1e3c72;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+}
+
+.pricing-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-table tr:hover td {
+    background: #f8fafc;
+}
+
+.pricing-table .buy-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background: #10b981;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    transition: all 0.2s ease;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.pricing-table .buy-btn:hover {
+    background: #059669;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.25);
+}
+
+.pricing-badge {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+/* Duty & Services Tabs */
+.tabs-container {
+    margin: 3rem 0;
+}
+
+.tabs-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 12px 24px;
+    background: white;
+    border: 1px solid rgba(30, 60, 114, 0.1);
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 0.98rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    outline: none;
+}
+
+.tab-btn:hover {
+    border-color: #ff4757;
+    color: #ff4757;
+    background: rgba(255, 71, 87, 0.02);
+}
+
+.tab-btn.active {
+    background: #ff4757;
+    color: white;
+    border-color: #ff4757;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.25);
+}
+
+.tab-content {
+    display: none;
+    background: white;
+    border-radius: 16px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.04);
+    border: 1px solid rgba(30, 60, 114, 0.08);
+    animation: fadeIn 0.4s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.duty-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.duty-list li {
+    padding: 1.1rem 1.2rem;
+    background: #f8fafc;
+    border-left: 4px solid #1e3c72;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: #334155;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.8rem;
+    line-height: 1.5;
+}
+
+.duty-list li i {
+    color: #ff4757;
+    font-size: 1rem;
+    margin-top: 0.2rem;
+}
+
+/* Policy Alert Box */
+.policy-alert {
+    background: #fffbeb;
+    border: 1.5px solid #fef3c7;
+    border-left: 6px solid #d97706;
+    border-radius: 12px;
+    padding: 1.8rem;
+    margin: 3rem 0;
+}
+
+.policy-alert h3 {
+    color: #92400e;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.policy-alert p, .policy-alert ul {
+    color: #b45309;
+    font-size: 0.96rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.policy-alert ul {
+    padding-left: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Home Redesign Enhancements */
+.hero-badge {
+    background: rgba(255, 71, 87, 0.15);
+    color: #ff4757;
+    padding: 6px 14px;
+    border-radius: 99px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.hero-features {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-feat-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.08);
+    padding: 6px 14px;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-feat-item i {
+    color: #10b981;
+}
+
+/* Premium Form Styles */
+.premium-form-group {
+    position: relative;
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.premium-form-input {
+    width: 100%;
+    padding: 0.9rem 1.1rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    font: inherit;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+.premium-form-input:focus {
+    border-color: #ff4757;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(255, 71, 87, 0.12);
+}
+
+.premium-form-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 0.45rem;
+    display: block;
+}
+
+/* Glassmorphism Hero Form Card */
+.enquiry-card.premium-card {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+

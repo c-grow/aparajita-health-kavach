@@ -86,127 +86,154 @@ $extra_css = '
 include 'includes/header.php';
 ?>
 
-  <section class="hero">
+  <section class="hero" style="background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200') center/cover no-repeat; min-height: 85vh; padding: 6rem 0 5rem;">
     <div class="container hero-grid">
-      <div class="hero-content">
-        <h2>Professional Healthcare <br>at Your Doorstep</h2>
-        <p>24/7 Home Nursing | Elderly Care | Home ICU | Physiotherapy | Lab Tests</p>
-        <div class="hero-actions">
-          <a href="contact.php" class="btn-primary">Get Emergency Help</a>
-          <a href="service.php" class="btn-secondary">Our Services</a>
+      <div class="hero-content" style="color: white;">
+        <div class="hero-badge"><i class="fas fa-heartbeat" style="animation: pulse 1.5s infinite;"></i> 24/7 Professional Home Healthcare</div>
+        <h2 style="font-size: 3.2rem; line-height: 1.25; margin-bottom: 1.2rem; font-weight: 700;">Professional Care <br><span style="color: #ff4757;">at Your Doorstep</span></h2>
+        <p style="font-size: 1.2rem; line-height: 1.6; margin-bottom: 2.2rem; opacity: 0.95;">Compassionate and qualified 24/7 Home Nursing, Elderly Care, Home ICU Setup, Physiotherapy, and Lab Tests in Patna and across Bihar.</p>
+        <div class="hero-actions" style="margin-bottom: 3rem;">
+          <a href="tel:+919876543210" class="btn-primary" style="background: #ff4757; font-weight: 600; padding: 14px 32px;"><i class="fas fa-phone-alt"></i> Call +91 98765 43210</a>
+          <a href="service.php" class="btn-secondary" style="border: 2px solid white; font-weight: 600; padding: 14px 32px;">Our Services</a>
+        </div>
+        <div class="hero-features">
+          <div class="hero-feat-item"><i class="fas fa-user-nurse"></i> Trained Nurses</div>
+          <div class="hero-feat-item"><i class="fas fa-shield-alt"></i> 100% Patient Safe</div>
+          <div class="hero-feat-item"><i class="fas fa-map-marker-alt"></i> Serving Patna &amp; Bihar</div>
         </div>
       </div>
-      <div class="enquiry-card">
-        <h3>Quick Enquiry</h3>
-        <p>Share your details. Our care team will call you shortly.</p>
+      
+      <!-- Premium Quick Enquiry Form Card -->
+      <div class="enquiry-card premium-card" style="padding: 2.2rem; background: rgba(255, 255, 255, 0.98); border-radius: 16px; border: 1px solid rgba(255,255,255,0.8); box-shadow: 0 20px 45px rgba(0,0,0,0.18);">
+        <h3 style="color: #1e3c72; margin-bottom: 0.4rem; font-size: 1.5rem; font-weight: 700;"><i class="fas fa-envelope-open-text" style="color: #ff4757;"></i> Quick Enquiry</h3>
+        <p style="color: #475569; font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.4;">Fill in details. Our care team will call you within 15 minutes.</p>
         <form action="backend/contact.php" method="POST" id="homeEnquiryForm">
-          <input type="text" name="name" placeholder="Your Full Name" required>
-          <input type="tel" name="phone" placeholder="Phone Number" required>
-          <select name="service" required>
-            <option value="">Select Service</option>
-            <option>Home Nursing Care</option>
-            <option>Elderly Care</option>
-            <option>Home ICU Setup</option>
-            <option>Physiotherapy</option>
-            <option>Lab Tests</option>
-            <option>Comfort Living Facility</option>
-            <option>Medical Equipment</option>
-            <option>Child Care</option>
-          </select>
-          <textarea name="message" rows="4" placeholder="Location / Requirement" required></textarea>
-          <button type="submit" class="btn-primary">Send Enquiry</button>
+          <div class="premium-form-group">
+            <label class="premium-form-label">Full Name</label>
+            <input type="text" name="name" class="premium-form-input" style="padding: 0.8rem 1rem;" placeholder="Your Name" required>
+          </div>
+          <div class="premium-form-group">
+            <label class="premium-form-label">Phone Number</label>
+            <input type="tel" name="phone" class="premium-form-input" style="padding: 0.8rem 1rem;" placeholder="Mobile Number" required>
+          </div>
+          <div class="premium-form-group">
+            <label class="premium-form-label">Required Service</label>
+            <select name="service" class="premium-form-input" style="padding: 0.8rem 1rem;" required>
+              <option value="">Select Service</option>
+              <option>Home Nursing Care</option>
+              <option>Elderly Care</option>
+              <option>Home ICU Setup</option>
+              <option>Physiotherapy</option>
+              <option>Lab Tests</option>
+              <option>Comfort Living Facility</option>
+              <option>Medical Equipment</option>
+              <option>Child Care</option>
+            </select>
+          </div>
+          <div class="premium-form-group">
+            <label class="premium-form-label">Location / Special Instructions</label>
+            <textarea name="message" rows="3" class="premium-form-input" style="padding: 0.8rem 1rem; min-height: 80px;" placeholder="Patient location & condition..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width: 100%; border: 0; padding: 1rem; border-radius: 8px; font-weight: 600; cursor: pointer; background: #ff4757; text-align: center; display: block; margin: 0.5rem 0 0;">Request Call Back</button>
         </form>
-        <div id="homeFormMessage" class="form-message"></div>
+        <div id="homeFormMessage" class="form-message" style="text-align: center; font-size: 0.95rem;"></div>
       </div>
     </div>
   </section>
 
   <!-- WHY CHOOSE US -->
-  <section class="features" aria-label="Why choose Aparajita Health Kavach">
+  <section class="features" aria-label="Why choose Aparajita Health Kavach" style="padding: 5.5rem 0; background: #ffffff;">
     <div class="container">
-      <h2 class="section-title">Why Families Choose Us</h2>
+      <div class="section-header" style="text-align: center; margin-bottom: 3.5rem;">
+        <div class="eyebrow">Trust &amp; Quality</div>
+        <h2 style="color: #1e3c72; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.8rem;">Why Families Trust Us</h2>
+        <p style="color: #64748b; font-size: 1.05rem; max-width: 700px; margin: 0 auto;">We provide hospital-grade care in the comfort of your home, ensuring professional medical oversight and emotional support.</p>
+      </div>
+      
       <div class="feature-grid">
-        <div class="feature-card">
-          <i class="fas fa-shield-alt"></i>
-          <h3>Patient-first Care</h3>
-          <p>Safe, timely nursing & monitoring—every step at home.</p>
+        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
+          <div style="width: 55px; height: 55px; background: rgba(255, 71, 87, 0.08); color: #ff4757; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-hand-holding-medical"></i></div>
+          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Patient-First Care</h3>
+          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">Safe, timely nursing, vital monitoring, and personalized care plans customized for every patient at home.</p>
         </div>
-        <div class="feature-card">
-          <i class="fas fa-user-nurse"></i>
-          <h3>Trained Care Team</h3>
-          <p>Qualified nurses & caregivers with clear care plans.</p>
+        
+        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
+          <div style="width: 55px; height: 55px; background: rgba(30, 60, 114, 0.08); color: #1e3c72; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-user-nurse"></i></div>
+          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Trained Care Team</h3>
+          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">Verified, qualified, and background-checked nurses &amp; caregivers with constant medical supervision.</p>
         </div>
-        <div class="feature-card">
-          <i class="fas fa-laptop-medical"></i>
-          <h3>Complete Home Services</h3>
-          <p>Home nursing, ICU setup, physiotherapy & lab tests.</p>
+        
+        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
+          <div style="width: 55px; height: 55px; background: rgba(16, 185, 129, 0.08); color: #10b981; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-laptop-medical"></i></div>
+          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Complete Home Services</h3>
+          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">One-stop solution for Home ICU setups, oxygen support, routine wellness visits, physiotherapy, and lab tests.</p>
         </div>
-        <div class="feature-card">
-          <i class="fas fa-headset"></i>
-          <h3>Fast Response, 24/7</h3>
-          <p>Quick support for emergencies and routine assistance.</p>
+        
+        <div class="feature-card" style="border-radius: 12px; border: 1px solid rgba(30, 60, 114, 0.05); padding: 2.2rem 1.8rem; text-align: left; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(0,0,0,0.02); display: flex; flex-direction: column; gap: 1rem;">
+          <div style="width: 55px; height: 55px; background: rgba(245, 158, 11, 0.08); color: #f59e0b; border-radius: 10px; display: grid; place-items: center; font-size: 1.6rem;"><i class="fas fa-phone-alt"></i></div>
+          <h3 style="color: #1e3c72; font-size: 1.25rem; font-weight: 700; margin: 0;">Fast Response, 24/7</h3>
+          <p style="color: #64748b; font-size: 0.95rem; margin: 0; line-height: 1.6;">Our dedicated support lines and coordinators are active 24/7 for prompt updates and emergency support.</p>
         </div>
       </div>
     </div>
   </section>
 
-
   <!-- SERVICES -->
-  <section class="section section-alt" id="services">
+  <section class="section section-alt" id="services" style="padding: 5.5rem 0; background: #f8fafc;">
     <div class="section-header reveal">
       <div class="eyebrow">Our Services</div>
-      <h2>Healthcare at Home</h2>
-      <p>Professional healthcare services designed for comfort, recovery, and well-being at home.</p>
+      <h2 style="color: #1e3c72; font-size: 2.5rem; font-weight: 700; margin-bottom: 0.8rem;">Healthcare at Home</h2>
+      <p style="color: #64748b; font-size: 1.05rem; max-width: 700px; margin: 0 auto;">Professional healthcare services designed for comfort, recovery, and well-being at home.</p>
     </div>
 
     <div class="services-grid">
 
-      <a class="service-card reveal" href="home-nursing-care.php" aria-label="Home Nursing Care">
-        <div class="service-icon"><i class="fas fa-user-nurse"></i></div>
-        <h3>Home Nursing Care</h3>
-        <p>Skilled nursing support for recovery, medication, and daily care needs.</p>
+      <a class="service-card reveal" href="home-nursing-care.php" aria-label="Home Nursing Care" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-user-nurse"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Home Nursing Care</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Skilled nursing support for recovery, medication administration, and daily care needs.</p>
       </a>
 
-      <a class="service-card reveal" href="elderly-care.php" aria-label="Elderly Care">
-        <div class="service-icon"><i class="fas fa-user-md"></i></div>
-        <h3>Elderly Care</h3>
-        <p>Compassionate assistance and health monitoring for senior family members.</p>
+      <a class="service-card reveal" href="elderly-care.php" aria-label="Elderly Care" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-user-md"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Elderly Care</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Compassionate assistance, health tracking, and comfort for senior family members.</p>
       </a>
 
-      <a class="service-card reveal" href="home-icu-setup.php" aria-label="Home ICU Setup">
-        <div class="service-icon"><i class="fas fa-laptop-medical"></i></div>
-        <h3>Home ICU Setup</h3>
-        <p>Advanced critical care equipment and professional support at home.</p>
+      <a class="service-card reveal" href="home-icu-setup.php" aria-label="Home ICU Setup" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-laptop-medical"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Home ICU Setup</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Advanced critical care equipment, monitors, and expert support at home.</p>
       </a>
 
-      <a class="service-card reveal" href="physiotherapy-at-home.php" aria-label="Physiotherapy at Home">
-        <div class="service-icon"><i class="fas fa-walking"></i></div>
-        <h3>Physiotherapy</h3>
-        <p>Personalized rehabilitation and mobility improvement sessions.</p>
+      <a class="service-card reveal" href="physiotherapy-at-home.php" aria-label="Physiotherapy at Home" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-walking"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Physiotherapy</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Personalized physical rehabilitation and post-op mobility recovery sessions.</p>
       </a>
 
-      <a class="service-card reveal" href="lab-tests-at-home.php" aria-label="Lab Tests at Home">
-        <div class="service-icon"><i class="fas fa-flask"></i></div>
-        <h3>Lab Tests at Home</h3>
-        <p>Safe sample collection and convenient diagnostic testing services.</p>
+      <a class="service-card reveal" href="lab-tests-at-home.php" aria-label="Lab Tests at Home" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-flask"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Lab Tests at Home</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Safe sample collection and convenient professional diagnostic testing services.</p>
       </a>
 
-      <a class="service-card reveal" href="medical-equipment.php" aria-label="Medical Equipment">
-        <div class="service-icon"><i class="fas fa-bed"></i></div>
-        <h3>Medical Equipment</h3>
-        <p>Reliable rental and supply of essential healthcare equipment.</p>
+      <a class="service-card reveal" href="medical-equipment.php" aria-label="Medical Equipment" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-bed"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Medical Equipment</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Reliable rental and supply of medical devices, beds, and support equipment.</p>
       </a>
 
-      <a class="service-card reveal" href="child-care.php" aria-label="Child Care">
-        <div class="service-icon"><i class="fas fa-baby"></i></div>
-        <h3>Child Care</h3>
-        <p>Trusted care and support for newborns and young children.</p>
+      <a class="service-card reveal" href="child-care.php" aria-label="Child Care" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-baby"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">Child Care</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Trusted newborn baby care, nanny services, and pediatric nursing.</p>
       </a>
 
-      <a class="service-card reveal" href="house-cleaning-sanitization.php" aria-label="House Cleaning & Sanitization">
-        <div class="service-icon"><i class="fas fa-broom"></i></div>
-        <h3>House Cleaning</h3>
-        <p>Clean, hygienic environments to support patient safety and comfort.</p>
+      <a class="service-card reveal" href="house-cleaning-sanitization.php" aria-label="House Cleaning & Sanitization" style="border-radius: 12px; padding: 2.2rem 1.5rem; transition: all 0.3s ease; display: flex; flex-direction: column; align-items: center; text-decoration: none; color: inherit;">
+        <div class="service-icon" style="margin-bottom: 1.2rem;"><i class="fas fa-broom"></i></div>
+        <h3 style="font-weight: 700; font-size: 1.2rem; color: #1e3c72;">House Cleaning</h3>
+        <p style="font-size: 0.92rem; color: #64748b; margin-top: 0.5rem; line-height: 1.5;">Clean, hygienic environments to support patient recovery and safety.</p>
       </a>
 
     </div>
