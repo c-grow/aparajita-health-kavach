@@ -1,136 +1,231 @@
 <?php
-$page_title = "Pricing List for Home Care & Nursing Service - Aparajita Health Kavach";
+$page_title = "Affordable Home Care & Nursing Service Pricing - Aparajita Health Kavach";
 $active_page = "pricing";
 include 'includes/header.php';
 ?>
 
 <section class="page-header">
   <div class="container">
-    <h1>Our Pricing List</h1>
-    <p>Affordable, transparent, and flexible rates for home nursing, ICU setup, and elderly care</p>
+    <h1>Our Pricing Plans</h1>
+    <p>Transparent and affordable rates for professional medical and caregiver services at home</p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     
-    <!-- PRICING LIST SECTION -->
-    <div class="pricing-section-wrapper" id="pricing-packages">
+    <!-- CATEGORY TABS -->
+    <div class="pricing-category-tabs">
+      <button class="pricing-category-btn active" onclick="switchPricingTab(event, 'nursing-pricing')">Nursing &amp; Care Attendants</button>
+      <button class="pricing-category-btn" onclick="switchPricingTab(event, 'visits-pricing')">Specialized Visits &amp; ICU Setups</button>
+    </div>
+
+    <!-- CATEGORY 1: NURSING ATTENDANTS -->
+    <div id="nursing-pricing" class="pricing-tab-content active">
       <div class="section-header section-header-pricing">
-        <div class="eyebrow">Price List</div>
-        <h2>Service Pricing Packages</h2>
-        <p>Choose the best package for your healthcare requirements at home. No hidden charges.</p>
+        <div class="eyebrow">Attendant Packages</div>
+        <h2>Caregiver Attendant Pricing</h2>
+        <p>Flexible daily shift options tailored for your patient's recovery and companion needs.</p>
       </div>
 
-      <div class="pricing-table-container">
-        <table class="pricing-table">
-          <thead>
-            <tr>
-              <th class="col-sl">Sl. No.</th>
-              <th>Services</th>
-              <th>Amount</th>
-              <th class="col-action">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="cell-sl">1</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Basic Nursing Care (8 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹400.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (8 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">2</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Basic Nursing Care (12 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹600.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (12 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">3</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Basic Nursing Care (24 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹1,000.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (24 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">4</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Nursing Care (8 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹600.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (8 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">5</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Nursing Care (12 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹800.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (12 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">6</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Nursing Care (24 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹1,500.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nursing Care (24 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">7</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Critical Nursing Care (8 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹1,200.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (8 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">8</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Critical Nursing Care (12 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹2,200.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (12 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">9</td>
-              <td><strong><a href="home-nursing-care.php" class="pricing-link">Critical Nursing Care (24 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹3,200.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (24 Hours)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">10</td>
-              <td><strong><a href="home-icu-setup.php" class="pricing-link">Rental ICU Setup at Home (24 Hours)</a></strong></td>
-              <td><span class="cell-amount">₹5,000.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Rental ICU Setup at Home')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">11</td>
-              <td><strong><a href="service.php" class="pricing-link">Nebulisation (Per Visit)</a></strong></td>
-              <td><span class="cell-amount">₹300.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Nebulisation (Per Visit)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">12</td>
-              <td><strong><a href="physiotherapy-at-home.php" class="pricing-link">Physiotherapist (Per Visit)</a></strong></td>
-              <td><span class="cell-amount">₹500.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Physiotherapist (Per Visit)')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">13</td>
-              <td><strong><a href="lab-tests-at-home.php" class="pricing-link">Blood Collection for Home Service (Per Visit)</a></strong></td>
-              <td><span class="cell-amount">₹150.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Blood Collection')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">14</td>
-              <td><strong><a href="service.php" class="pricing-link">Medicine Delivery at Home (Per Visit)</a></strong></td>
-              <td><span class="cell-amount">₹100.00/-</span> *</td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Medicine Delivery')">Book Now</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">15</td>
-              <td><strong><a href="medical-equipment.php" class="pricing-link">Consumables</a></strong></td>
-              <td><span class="pricing-badge">MRP Rates</span></td>
-              <td class="cell-center"><button class="buy-btn" onclick="selectAndScroll('Consumables Enquiry')">Enquire</button></td>
-            </tr>
-            <tr>
-              <td class="cell-sl">16</td>
-              <td><strong><a href="service.php" class="pricing-link">Air Ambulance</a></strong></td>
-              <td><span class="pricing-badge badge-danger">Call for Price</span></td>
-              <td class="cell-center"><a href="tel:+919876543210" class="buy-btn btn-coral-red">Call Now</a></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="featured-pricing-grid">
+        
+        <!-- Basic Care Card -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h3 class="pricing-card-title">Basic Attendant</h3>
+            <p class="pricing-card-desc">For daily companion support, personal hygiene, and general mobility assistance.</p>
+            <div class="pricing-card-price">₹1,000 <span>/ 24 Hours</span></div>
+          </div>
+          <ul class="pricing-card-features">
+            <li><i class="fas fa-check-circle"></i> <strong>12 Hours Shift:</strong> ₹600 / day</li>
+            <li><i class="fas fa-check-circle"></i> <strong>8 Hours Shift:</strong> ₹400 / day</li>
+            <li><i class="fas fa-check-circle"></i> Personal grooming &amp; bathing</li>
+            <li><i class="fas fa-check-circle"></i> Feeding &amp; dressing support</li>
+            <li><i class="fas fa-check-circle"></i> Vital signs monitoring (BP, Sugar)</li>
+            <li><i class="fas fa-check-circle"></i> Bed-sores turning &amp; prevention</li>
+            <li><i class="fas fa-check-circle"></i> Diaper care &amp; sanitation</li>
+          </ul>
+          <button class="buy-btn" onclick="selectAndScroll('Basic Nursing Care (24 Hours)')">Book Basic Care</button>
+        </div>
+
+        <!-- Standard Care Card (Popular) -->
+        <div class="pricing-card popular">
+          <div class="pricing-card-header">
+            <h3 class="pricing-card-title">Standard Attendant</h3>
+            <p class="pricing-card-desc">For clinical assistance, bedside nursing support, and regular vital logs.</p>
+            <div class="pricing-card-price">₹1,500 <span>/ 24 Hours</span></div>
+          </div>
+          <ul class="pricing-card-features">
+            <li><i class="fas fa-check-circle"></i> <strong>12 Hours Shift:</strong> ₹800 / day</li>
+            <li><i class="fas fa-check-circle"></i> <strong>8 Hours Shift:</strong> ₹600 / day</li>
+            <li><i class="fas fa-check-circle"></i> <strong>All Basic Care duties included</strong></li>
+            <li><i class="fas fa-check-circle"></i> Ryles Tube Feeding</li>
+            <li><i class="fas fa-check-circle"></i> Cleaning &amp; dressing wounds</li>
+            <li><i class="fas fa-check-circle"></i> Oral &amp; IV medication delivery</li>
+            <li><i class="fas fa-check-circle"></i> Tracheostomy suctioning &amp; care</li>
+          </ul>
+          <button class="buy-btn" style="background:#ff4757;" onclick="selectAndScroll('Nursing Care (24 Hours)')">Book Standard Care</button>
+        </div>
+
+        <!-- Critical Care Card -->
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h3 class="pricing-card-title">Critical Attendant</h3>
+            <p class="pricing-card-desc">For high-dependency patients, advanced clinical support, and device management.</p>
+            <div class="pricing-card-price">₹3,200 <span>/ 24 Hours</span></div>
+          </div>
+          <ul class="pricing-card-features">
+            <li><i class="fas fa-check-circle"></i> <strong>12 Hours Shift:</strong> ₹2200 / day</li>
+            <li><i class="fas fa-check-circle"></i> <strong>8 Hours Shift:</strong> ₹1200 / day</li>
+            <li><i class="fas fa-check-circle"></i> <strong>All Standard Care duties included</strong></li>
+            <li><i class="fas fa-check-circle"></i> Infusion pump &amp; IV fluid care</li>
+            <li><i class="fas fa-check-circle"></i> BiPAP / CPAP ventilator tracking</li>
+            <li><i class="fas fa-check-circle"></i> Urinary catheter maintenance</li>
+            <li><i class="fas fa-check-circle"></i> Stoma care &amp; bag management</li>
+          </ul>
+          <button class="buy-btn" onclick="selectAndScroll('Critical Nursing Care (24 Hours)')">Book Critical Care</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- CATEGORY 2: SPECIALIZED VISITS & ICU SETUPS -->
+    <div id="visits-pricing" class="pricing-tab-content">
+      <div class="section-header section-header-pricing">
+        <div class="eyebrow">Medical &amp; Equipment Support</div>
+        <h2>Specialized Home Visits &amp; Setups</h2>
+        <p>Expert healthcare interventions and essential clinical assistance available directly at home.</p>
+      </div>
+
+      <div class="addon-services-grid">
+        
+        <!-- ICU Setup -->
+        <div class="addon-card">
+          <div class="addon-card-header">
+            <div class="addon-icon"><i class="fas fa-laptop-medical"></i></div>
+            <div class="addon-info">
+              <h4>Home ICU Setup</h4>
+              <p>Hospital-grade ICU setup with ventilator support, cardiac monitoring, and clinical layout.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Starting from</span>
+              <span class="addon-amount">₹5,000 / day</span>
+            </div>
+            <button class="buy-btn" onclick="selectAndScroll('Rental ICU Setup at Home')">Book Setup</button>
+          </div>
+        </div>
+
+        <!-- Physiotherapist -->
+        <div class="addon-card">
+          <div class="addon-card-header">
+            <div class="addon-icon"><i class="fas fa-walking"></i></div>
+            <div class="addon-info">
+              <h4>Physiotherapist Visit</h4>
+              <p>Professional post-surgery rehabilitation, pain management, and orthopedic mobility sessions.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Per Session</span>
+              <span class="addon-amount">₹500 / visit</span>
+            </div>
+            <button class="buy-btn" onclick="selectAndScroll('Physiotherapist (Per Visit)')">Book Visit</button>
+          </div>
+        </div>
+
+        <!-- Nebulisation -->
+        <div class="addon-card">
+          <div class="addon-card-header">
+            <div class="addon-icon"><i class="fas fa-lungs"></i></div>
+            <div class="addon-info">
+              <h4>Nebulisation Session</h4>
+              <p>Clinical nebulisation support for asthma, COPD, and respiratory comfort visits.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Per Session</span>
+              <span class="addon-amount">₹300 / visit</span>
+            </div>
+            <button class="buy-btn" onclick="selectAndScroll('Nebulisation (Per Visit)')">Book Visit</button>
+          </div>
+        </div>
+
+        <!-- Blood Collection -->
+        <div class="addon-card">
+          <div class="addon-card-header">
+            <div class="addon-icon"><i class="fas fa-vial"></i></div>
+            <div class="addon-info">
+              <h4>Blood &amp; Sample Collection</h4>
+              <p>Professional home diagnostics sample extraction with certified, verified lab integration.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Home Extraction</span>
+              <span class="addon-amount">₹150 / visit</span>
+            </div>
+            <button class="buy-btn" onclick="selectAndScroll('Blood Collection')">Book Visit</button>
+          </div>
+        </div>
+
+        <!-- Medicine Delivery -->
+        <div class="addon-card">
+          <div class="addon-card-header">
+            <div class="addon-icon"><i class="fas fa-pills"></i></div>
+            <div class="addon-info">
+              <h4>Medicine Delivery at Home</h4>
+              <p>Prompt medicine, prescription items, and medical supplies dispatch to patient bedside.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Per Delivery</span>
+              <span class="addon-amount">₹100 / visit</span>
+            </div>
+            <button class="buy-btn" onclick="selectAndScroll('Medicine Delivery')">Request</button>
+          </div>
+        </div>
+
+        <!-- Consumables -->
+        <div class="addon-card">
+          <div class="addon-card-header">
+            <div class="addon-icon"><i class="fas fa-box-tissue"></i></div>
+            <div class="addon-info">
+              <h4>Consumables &amp; Disposables</h4>
+              <p>Essential gloves, underpads, medical sanitizers, catheters, and syringes supply.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Rates Info</span>
+              <span class="addon-amount">At MRP Rates</span>
+            </div>
+            <button class="buy-btn" onclick="selectAndScroll('Consumables Enquiry')">Enquire</button>
+          </div>
+        </div>
+
+        <!-- Air Ambulance -->
+        <div class="addon-card" style="grid-column: span 1;">
+          <div class="addon-card-header">
+            <div class="addon-icon" style="background:#fee2e2; color:#ef4444;"><i class="fas fa-plane-departure"></i></div>
+            <div class="addon-info">
+              <h4>Emergency Air Ambulance</h4>
+              <p>24/7 immediate medical evacuation and transit support with expert paramedics onboard.</p>
+            </div>
+          </div>
+          <div class="addon-card-footer">
+            <div>
+              <span class="addon-price-label">Evacuation Rate</span>
+              <span class="addon-amount" style="font-size: 1.1rem; color:#ef4444;">Call for details</span>
+            </div>
+            <a href="tel:+919876543210" class="buy-btn btn-coral-red">Call Now</a>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -283,7 +378,7 @@ $extra_js = '
 <script>
     handleAjaxForm("pricingBookingForm", "bookingFormMessage");
 
-    // Interactive Tab Functions
+    // Interactive Tab Functions for duties
     function openTab(evt, tabId) {
         let i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tab-content");
@@ -291,6 +386,21 @@ $extra_js = '
             tabcontent[i].classList.remove("active");
         }
         tablinks = document.getElementsByClassName("tab-btn");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].classList.remove("active");
+        }
+        document.getElementById(tabId).classList.add("active");
+        evt.currentTarget.classList.add("active");
+    }
+
+    // Category switch tabs for pricing
+    function switchPricingTab(evt, tabId) {
+        let i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("pricing-tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].classList.remove("active");
+        }
+        tablinks = document.getElementsByClassName("pricing-category-btn");
         for (i = 0; i < tablinks.length; i++) {
             tablinks[i].classList.remove("active");
         }

@@ -1197,16 +1197,252 @@ nav ul li a {
     text-align: center;
 }
 
-.pricing-link {
-    color: #1e3c72;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.2s;
-}
-
 .pricing-link:hover {
     color: #ff4757;
     text-decoration: underline;
+}
+
+/* Modern Pricing UI/UX Redesign */
+.pricing-category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+    flex-wrap: wrap;
+}
+
+.pricing-category-btn {
+    padding: 12px 28px;
+    background: #f1f5f9;
+    border: 1px solid transparent;
+    color: #475569;
+    font-weight: 600;
+    font-size: 0.98rem;
+    cursor: pointer;
+    border-radius: 99px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    outline: none;
+}
+
+.pricing-category-btn:hover {
+    background: #e2e8f0;
+    color: #1e3c72;
+}
+
+.pricing-category-btn.active {
+    background: #1e3c72;
+    color: white;
+    box-shadow: 0 4px 15px rgba(30, 60, 114, 0.2);
+}
+
+.pricing-tab-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.pricing-tab-content.active {
+    display: block;
+}
+
+/* Featured cards */
+.featured-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 16px;
+    border: 1px solid rgba(30, 60, 114, 0.08);
+    padding: 2.5rem 2rem;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(30, 60, 114, 0.02);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 60, 114, 0.08);
+    border-color: #ff4757;
+}
+
+.pricing-card.popular {
+    border: 2px solid #ff4757;
+    box-shadow: 0 20px 40px rgba(255, 71, 87, 0.08);
+}
+
+.pricing-card.popular::before {
+    content: "MOST POPULAR";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4757;
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 99px;
+    letter-spacing: 0.08em;
+}
+
+.pricing-card-header {
+    text-align: center;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card-title {
+    font-size: 1.35rem;
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.pricing-card-desc {
+    font-size: 0.88rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.pricing-card-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin: 1rem 0 0.5rem;
+    text-align: center;
+}
+
+.pricing-card-price span {
+    font-size: 0.95rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.pricing-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+    flex-grow: 1;
+}
+
+.pricing-card-features li {
+    font-size: 0.92rem;
+    color: #475569;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.pricing-card-features li i {
+    color: #10b981;
+    font-size: 1rem;
+}
+
+.pricing-card .buy-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-align: center;
+    display: block;
+}
+
+/* Addon Visit Cards */
+.addon-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.addon-card {
+    background: white;
+    border-radius: 14px;
+    border: 1px solid rgba(30, 60, 114, 0.06);
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+}
+
+.addon-card:hover {
+    border-color: #ff4757;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(30, 60, 114, 0.06);
+}
+
+.addon-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.addon-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(30, 60, 114, 0.06);
+    color: #1e3c72;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.addon-card:hover .addon-icon {
+    background: #ff4757;
+    color: white;
+}
+
+.addon-info h4 {
+    color: #1e3c72;
+    font-size: 1.1rem;
+    margin: 0 0 0.25rem 0;
+    font-weight: 700;
+}
+
+.addon-info p {
+    color: #64748b;
+    font-size: 0.88rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.addon-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 1rem;
+}
+
+.addon-price-label {
+    font-size: 0.8rem;
+    color: #64748b;
+    display: block;
+}
+
+.addon-amount {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #1e293b;
+}
+
+.addon-card .buy-btn {
+    padding: 6px 14px;
+    font-size: 0.82rem;
 }
 
 
